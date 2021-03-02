@@ -13,7 +13,6 @@ function App() {
     <Router>
       <div className="App">
         <TopNav />
-        <h1>GIF FIT</h1>
       </div>
     </Router>
   );

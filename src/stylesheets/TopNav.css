@@ -1,53 +1,67 @@
 /* Navbar container */
 .navbar {
-    box-sizing: border-box;
     overflow: hidden;
-    background-color: rgb(32, 32, 32);
+    margin-top: -2rem;
+    /* background-color: rgb(32, 32, 32); */
     font-family: Arial;
+    border-bottom: 2px solid rgb(141, 39, 209);
 }
+
 
 /* GIF FIT header */
 .title {
     float: left;
-    color: rgb(196, 2, 221);
-    margin-top: .5rem;
+    color: rgb(221, 2, 130);
+    margin-top: 2rem;
     margin-bottom: -1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
-/* Links inside the navbar */
-.navbar a {
-    /* float: left; */
-    font-size: 1.5rem;
-    color: rgb(0, 255, 179);
+/* navbar flex wrapper */
+.nav-flex-wrapper {
+    width: 80%;
+    float: right;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* index */
+.index {
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(141, 39, 209);
     padding: 1rem 1rem;
     text-decoration: none;
+    border-left: 2px solid rgb(141, 39, 209);
 }
 
 /* The dropdown container */
 .dropdown {
     float: left;
     overflow: hidden;
-    /* border: solid 1px red; */
+    margin-top: 2rem;
 }
 
 /* Dropdown button */
 .dropdown .dropbtn {
+    cursor: pointer;
     font-size: 1rem;
     border: none;
     outline: none;
-    color:rgb(0, 255, 179);
-    /* margin-top: 18px; */
-    margin-left: 3rem;
+    /* min-width: 160px; */
+    color:rgb(141, 39, 209);
     padding: 1rem 1rem;
     background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    /* margin: 0; */
+    font-family: inherit;
+    margin: 0;
 }
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(0, 255, 179);
-    color: rgb(32, 32, 32);
+    background-color: rgb(141, 39, 209);
+    color: white;
 }
 
 /* Dropdown content (hidden by default) */
@@ -55,10 +69,10 @@
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    margin-left: 4rem;
     min-width: 160px;
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border: solid 2px rgb(141, 39, 209);
 }
 
 /* Links inside the dropdown */
