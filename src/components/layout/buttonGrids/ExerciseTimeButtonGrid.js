@@ -1,4 +1,6 @@
 import React, {useState} from 'react'
+import { connect } from 'react-redux'
+import { SET_EXERCISE_TIME } from '../../../actionTypes/index'
 
 function ExerciseTimeButtonGrid(props) {
     const [twenty, setTwenty] = useState(false)
@@ -11,6 +13,7 @@ function ExerciseTimeButtonGrid(props) {
         setThirty(false)
         setForty(false)
         setSixty(false)
+        props.setExerciseTime(e.target.value)
     }
 
     const handleThirty = (e) => {
@@ -18,6 +21,7 @@ function ExerciseTimeButtonGrid(props) {
         setThirty(true)
         setForty(false)
         setSixty(false)
+        props.setExerciseTime(e.target.value)
     }
 
     const handleForty = (e) => {
@@ -25,6 +29,7 @@ function ExerciseTimeButtonGrid(props) {
         setThirty(false)
         setForty(true)
         setSixty(false)
+        props.setExerciseTime(e.target.value)
     }
 
     const handleSixty = (e) => {
@@ -32,6 +37,7 @@ function ExerciseTimeButtonGrid(props) {
         setThirty(false)
         setForty(false)
         setSixty(true)
+        props.setExerciseTime(e.target.value)
     }
 
     return (
@@ -76,4 +82,8 @@ function ExerciseTimeButtonGrid(props) {
 
 }
 
-export default ExerciseTimeButtonGrid
+const mapDispatchToProps = dispatch => ({
+    setExerciseTime: (number) => dispatch({ type: SET_EXERCISE_TIME, payload: number })
+})
+
+export default connect(null, mapDispatchToProps)(ExerciseTimeButtonGrid)
