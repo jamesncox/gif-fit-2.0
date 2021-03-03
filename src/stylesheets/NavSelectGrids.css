@@ -18,7 +18,7 @@
 }
 
 .select-button:hover {
-    background-color: var(--dark-purple-50-opacity);
+    background-color: var(--medium-purple);
     color: var(--white);
 }
 

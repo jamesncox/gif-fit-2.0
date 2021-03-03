@@ -16,7 +16,7 @@
   /* purples */
   --dark-purple: rgb(51, 8, 150);
   --dark-purple-50-opacity: rgba(51, 8, 150, 0.5);
-  --medium-purple: rgb(94, 47, 202);
+  --medium-purple: rgb(133, 104, 201);
 
   /* transition */
  --theme-transition: background-color .4s ease-in-out, color .4s ease-in-out;
