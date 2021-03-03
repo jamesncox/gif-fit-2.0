@@ -1,4 +1,5 @@
 import React, {useRef} from 'react'
+import ExerciseNumberButtonGrid from './ExerciseNumberButtonGrid'
 
 function SideNav(props) {
     const navRef = useRef()
@@ -24,10 +25,44 @@ function SideNav(props) {
 
             <div id="mySidenav" className="sidenav" ref={navRef}>
                 <a className="closebtn" onClick={() => closeNav()}>&times;</a>
-                <a href="#">No. Exercises</a>
-                <a href="#">Exercise Time</a>
-                <a href="#">Rest Time</a>
-                <a href="#">No. Rounds</a>
+                <div className="dropdown">
+                    <button className="dropbtn">
+                        No. Exercises
+                        <i className="fa fa-caret-down"></i>
+                    </button>
+                    <div className="dropdown-content">
+                        <ExerciseNumberButtonGrid />
+                    </div>
+                </div>
+                <div className="dropdown">
+                    <button className="dropbtn">
+                        No. Exercises
+                        <i className="fa fa-caret-down"></i>
+                    </button>
+                    <div className="dropdown-content">
+                        <ExerciseNumberButtonGrid />
+                    </div>
+                </div>
+                <div className="dropdown">
+                    <button className="dropbtn">
+                        No. Exercises
+                        <i className="fa fa-caret-down"></i>
+                    </button>
+                    <div className="dropdown-content">
+                        <ExerciseNumberButtonGrid />
+                    </div>
+                </div>
+                <div className="dropdown">
+                    <button className="dropbtn">
+                        No. Exercises
+                        <i className="fa fa-caret-down"></i>
+                    </button>
+                    <div className="dropdown-content">
+                        <ExerciseNumberButtonGrid />
+                    </div>
+                </div>
+
+                <a href="#" className="index">INDEX</a>
             </div>
         </>
     )
