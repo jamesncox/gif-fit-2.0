@@ -1,12 +1,10 @@
 /* Navbar container */
-.navbar {
+.top-nav {
+    background-color: white;
     overflow: hidden;
-    margin-top: -2rem;
-    /* background-color: rgb(32, 32, 32); */
     font-family: Arial;
-    border-bottom: 2px solid rgb(141, 39, 209);
+    border-bottom: 2px solid rgb(8, 57, 150);
 }
-
 
 /* GIF FIT header */
 .title {
@@ -31,10 +29,10 @@
     margin-top: 2rem;
     font-size: 1rem;
     font-weight: bold;
-    color: rgb(141, 39, 209);
+    color: rgb(8, 57, 150);
     padding: 1rem 1rem;
     text-decoration: none;
-    border-left: 2px solid rgb(141, 39, 209);
+    border-left: 2px solid rgb(8, 57, 150);
 }
 
 /* The dropdown container */
@@ -48,9 +46,10 @@
 .dropdown .dropbtn {
     cursor: pointer;
     font-size: 1rem;
+    font-weight: bold;
     border: none;
     outline: none;
-    color:rgb(141, 39, 209);
+    color:rgb(8, 57, 150);
     padding: 1rem 1rem;
     background-color: inherit;
     font-family: inherit;
@@ -58,8 +57,8 @@
 }
 
 /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(141, 39, 209);
+.top-nav a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(8, 57, 150);
     color: white;
 }
 
@@ -71,7 +70,7 @@
     min-width: 160px;
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.425);
     z-index: 1;
-    border: solid 2px rgb(141, 39, 209);
+    border: solid 2px rgb(8, 57, 150);
 }
 
 /* Links inside the dropdown */

@@ -3,7 +3,7 @@ import React from 'react'
 function TopNav(props) {
 
     return (
-        <div className="navbar">
+        <div className="top-nav">
             <h1 className="title">GIF FIT</h1>
 
             <div className="nav-flex-wrapper">
