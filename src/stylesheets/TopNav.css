@@ -102,30 +102,32 @@
 .select-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: .5rem;
+    padding: .5rem;
 }
 
 .select-button {
     cursor: pointer;
-    height: 3rem;
-    font-size: 1.5rem;
+    height: 36px;
+    font-size: 1.25rem;
     color: rgb(51, 8, 150);
     background-color: white;
-    margin: .75rem;
-    border: 2px solid rgb(51, 8, 150);
+    /* margin: .75rem; */
+    border: 2px solid rgba(51, 8, 150, 0.5);
     border-radius: 10px;
     outline: none;
 }
 
 .select-button:hover {
-    background-color: rgb(143, 137, 158);
+    background-color: rgba(51, 8, 150, 0.5);
     color: white;
 }
 
 .selected-button {   
     cursor: pointer;
-    height: 3rem;
-    font-size: 1.5rem;
-    margin: .75rem;
+    height: 36px;
+    font-size: 1.25rem;
+    /* margin: .75rem; */
     background-color: rgb(51, 8, 150);
     color: white;
     border: 2px solid rgb(51, 8, 150);

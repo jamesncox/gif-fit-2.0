@@ -1,5 +1,6 @@
 import React, {useRef} from 'react'
 import ExerciseNumberButtonGrid from './ExerciseNumberButtonGrid'
+import ExerciseTimeButtonGrid from './ExerciseTimeButtonGrid'
 
 function SideNav(props) {
     const navRef = useRef()
@@ -38,11 +39,11 @@ function SideNav(props) {
                     </div>
                     <div className="dropdown">
                         <button className="dropbtn">
-                            No. Exercises
+                            Exercise Time
                             <i className="fa fa-caret-down"></i>
                         </button>
                         <div className="dropdown-content">
-                            <ExerciseNumberButtonGrid />
+                            <ExerciseTimeButtonGrid />
                         </div>
                     </div>
                     <div className="dropdown">
