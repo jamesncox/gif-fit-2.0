@@ -23,7 +23,7 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 20px;
-  color: white;
+  color: var(--white);
   display: block;
   transition: 0.3s;
 }
@@ -43,7 +43,7 @@
 .sidenav-hamburger-wrapper {
   font-family: Arial;
   display: flex;
-  border-bottom: 2px solid rgb(51, 8, 150);
+  border-bottom: 2px solid var(--dark-purple);
 }
 
 .hamburger {
@@ -52,12 +52,12 @@
   font-size: 2rem;
   margin-top: 30px;
   padding-bottom: 7px;
-  color: rgb(51, 8, 150);
+  color: var(--dark-purple);
 }
 
 .sidenav-title {
   position: fixed;
   margin-top: 36px;
   margin-left: 4rem;
-  color: rgb(221, 2, 130);
+  color: var(--bright-pink);
 }

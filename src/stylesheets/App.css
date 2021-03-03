@@ -3,3 +3,25 @@
   margin-right: -1rem;
   margin-left: -1rem;
 }
+
+:root {
+  /* neutrals */
+  --black: black;
+  --white: white;
+  --off-white: rgb(245, 245, 245);
+
+  /* rose/reds */
+  --bright-pink: rgb(221, 2, 130);
+
+  /* purples */
+  --dark-purple: rgb(51, 8, 150);
+  --dark-purple-50-opacity: rgba(51, 8, 150, 0.5);
+  --medium-purple: rgb(94, 47, 202);
+
+  /* transition */
+ --theme-transition: background-color .4s ease-in-out, color .4s ease-in-out;
+
+  /* shadows */
+  --black-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.425);
+  --light-shadow: 0 4px 8px 1px var(--black);
+}

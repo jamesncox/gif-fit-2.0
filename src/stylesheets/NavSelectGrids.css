@@ -10,27 +10,25 @@
     cursor: pointer;
     height: 36px;
     font-size: 1.25rem;
-    color: rgb(51, 8, 150);
-    background-color: white;
-    /* margin: .75rem; */
-    border: 2px solid rgba(51, 8, 150, 0.5);
+    color: var(--dark-purple);
+    background-color: var(--white);
+    border: 2px solid var(--dark-purple-50-opacity);
     border-radius: 10px;
     outline: none;
 }
 
 .select-button:hover {
-    background-color: rgba(51, 8, 150, 0.5);
-    color: white;
+    background-color: var(--dark-purple-50-opacity);
+    color: var(--white);
 }
 
 .selected-button {   
     cursor: pointer;
     height: 36px;
     font-size: 1.25rem;
-    /* margin: .75rem; */
-    background-color: rgb(51, 8, 150);
-    color: white;
-    border: 2px solid rgb(51, 8, 150);
+    background-color: var(--dark-purple);
+    color: var(--white);
+    border: 2px solid var(--dark-purple);
     border-radius: 10px;
     outline: none;
 }

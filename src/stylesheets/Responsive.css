@@ -13,26 +13,25 @@
 
     
     .dropdown .dropbtn {
-        color: white;
+        color: var(--white);
         white-space: nowrap;
         font-weight: 400;
-        /* margin-bottom: 1rem; */
     }
 
     .top-nav a:hover, .dropdown:hover .dropbtn {
-        background-color: rgb(94, 47, 202);
+        background-color: var(--medium-purple);
     }
 
     .dropdown-content {
-        border: solid 2px rgb(94, 47, 202);;
+        border: solid 2px var(--medium-purple);;
     }
 
     .selected-button {
-        background-color: rgb(94, 47, 202);
+        background-color: var(--medium-purple);
     }
 
     .index {
-        border-left: 2px solid white;
+        border-left: 2px solid var(--white);
         margin-left: -1.25rem;
         margin-top: 5rem;
     }
