@@ -13,6 +13,7 @@
   }
   
   .sidenav a {
+    white-space: nowrap;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
@@ -29,7 +30,7 @@
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 40px;
     margin-left: 50px;
   }
 

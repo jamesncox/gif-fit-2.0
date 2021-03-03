@@ -23,7 +23,7 @@ function SideNav(props) {
             </div>
 
             <div id="mySidenav" className="sidenav" ref={navRef}>
-                <a href="javascript:void(0)" className="closebtn" onClick={() => closeNav()}>&times;</a>
+                <a className="closebtn" onClick={() => closeNav()}>&times;</a>
                 <a href="#">No. Exercises</a>
                 <a href="#">Exercise Time</a>
                 <a href="#">Rest Time</a>
