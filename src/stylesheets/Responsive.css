@@ -7,8 +7,34 @@
         display: block;
     }
 
-    .sidenav-wrapper {
+    .sidenav-hamburger-wrapper {
         display: flex;
+    }
+
+    
+    .dropdown .dropbtn {
+        color: white;
+        white-space: nowrap;
+        font-weight: 400;
+        /* margin-bottom: 1rem; */
+    }
+
+    .top-nav a:hover, .dropdown:hover .dropbtn {
+        background-color: rgb(94, 47, 202);
+    }
+
+    .dropdown-content {
+        border: solid 2px rgb(94, 47, 202);;
+    }
+
+    .selected-button {
+        background-color: rgb(94, 47, 202);
+    }
+
+    .index {
+        border-left: 2px solid white;
+        margin-left: -1.25rem;
+        margin-top: 5rem;
     }
 }
 
@@ -21,7 +47,7 @@
         display: none;
     }
 
-    .sidenav-wrapper {
+    .sidenav-hamburger-wrapper {
         display: none;
     }
 }

@@ -14,7 +14,7 @@ function SideNav(props) {
 
     return (
         <>
-            <div className="sidenav-wrapper">
+            <div className="sidenav-hamburger-wrapper">
                 <span className="hamburger" onClick={() => openNav()}>
                     &#9776; 
                 </span>
@@ -25,44 +25,47 @@ function SideNav(props) {
 
             <div id="mySidenav" className="sidenav" ref={navRef}>
                 <a className="closebtn" onClick={() => closeNav()}>&times;</a>
-                <div className="dropdown">
-                    <button className="dropbtn">
-                        No. Exercises
-                        <i className="fa fa-caret-down"></i>
-                    </button>
-                    <div className="dropdown-content">
-                        <ExerciseNumberButtonGrid />
-                    </div>
-                </div>
-                <div className="dropdown">
-                    <button className="dropbtn">
-                        No. Exercises
-                        <i className="fa fa-caret-down"></i>
-                    </button>
-                    <div className="dropdown-content">
-                        <ExerciseNumberButtonGrid />
-                    </div>
-                </div>
-                <div className="dropdown">
-                    <button className="dropbtn">
-                        No. Exercises
-                        <i className="fa fa-caret-down"></i>
-                    </button>
-                    <div className="dropdown-content">
-                        <ExerciseNumberButtonGrid />
-                    </div>
-                </div>
-                <div className="dropdown">
-                    <button className="dropbtn">
-                        No. Exercises
-                        <i className="fa fa-caret-down"></i>
-                    </button>
-                    <div className="dropdown-content">
-                        <ExerciseNumberButtonGrid />
-                    </div>
-                </div>
 
-                <a href="#" className="index">INDEX</a>
+                <div className="sidenav-wrapper">
+                    <div className="dropdown">
+                        <button className="dropbtn">
+                            No. Exercises
+                            <i className="fa fa-caret-down"></i>
+                        </button>
+                        <div className="dropdown-content">
+                            <ExerciseNumberButtonGrid />
+                        </div>
+                    </div>
+                    <div className="dropdown">
+                        <button className="dropbtn">
+                            No. Exercises
+                            <i className="fa fa-caret-down"></i>
+                        </button>
+                        <div className="dropdown-content">
+                            <ExerciseNumberButtonGrid />
+                        </div>
+                    </div>
+                    <div className="dropdown">
+                        <button className="dropbtn">
+                            No. Exercises
+                            <i className="fa fa-caret-down"></i>
+                        </button>
+                        <div className="dropdown-content">
+                            <ExerciseNumberButtonGrid />
+                        </div>
+                    </div>
+                    <div className="dropdown">
+                        <button className="dropbtn">
+                            No. Exercises
+                            <i className="fa fa-caret-down"></i>
+                        </button>
+                        <div className="dropdown-content">
+                            <ExerciseNumberButtonGrid />
+                        </div>
+                    </div>
+
+                    <a href="#" className="index">INDEX</a>
+                </div>
             </div>
         </>
     )
