@@ -35,7 +35,7 @@ function ExerciseTimeButtonGrid(props) {
     }
 
     return (
-        <div className="select-grid">
+        <div className="select-exercise-time-grid">
                 <button
                     id="one-number"
                     className={twenty ? "selected-button" : "select-button"}

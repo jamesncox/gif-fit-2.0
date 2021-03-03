@@ -144,7 +144,7 @@ function ExerciseNumberButtonGrid(props) {
     }
 
     return (
-        <div className="select-grid">
+        <div className="select-exercise-number-grid">
                 <button
                     id="one-number"
                     className={one ? "selected-button" : "select-button"}
