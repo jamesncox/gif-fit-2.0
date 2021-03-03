@@ -20,13 +20,13 @@
   --off-white: rgb(245, 245, 245);
 
   /* purples */
-  --purple-pink: rgb(158, 41, 255);
-  --dark-purple: rgb(51, 8, 150);
+  --dark-purple: rgb(68, 9, 204);
   --dark-purple-50-opacity: rgba(51, 8, 150, 0.5);
   --medium-purple: rgb(133, 104, 201);
 
   /* blues */
-  --blue: #195892;
+  --sea-blue: rgb(22, 239, 255);
+  --blue: #2476c4;
 
   /* transition */
  --theme-transition: background-color .4s ease-in-out, color .4s ease-in-out;
