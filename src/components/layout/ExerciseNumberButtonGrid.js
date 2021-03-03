@@ -146,7 +146,7 @@ function ExerciseNumberButtonGrid(props) {
     return (
         <div className="select-grid">
                 <button
-                    id="one"
+                    id="one-number"
                     className={one ? "selected-button" : "select-button"}
                     onClick={(e) => handleOne(e)}
                     value={1}
@@ -155,7 +155,7 @@ function ExerciseNumberButtonGrid(props) {
                 </button>
 
                 <button
-                    id="two"
+                    id="two-number"
                     className={two ? "selected-button" : "select-button"}
                     onClick={(e) => handleTwo(e)}
                     value={2}
@@ -164,7 +164,7 @@ function ExerciseNumberButtonGrid(props) {
                 </button> 
 
                 <button
-                    id="three"
+                    id="three-number"
                     className={three ? "selected-button" : "select-button"}
                     onClick={(e) => handleThree(e)}
                     value={3}
@@ -173,7 +173,7 @@ function ExerciseNumberButtonGrid(props) {
                 </button> 
 
                 <button
-                    id="four"
+                    id="four-number"
                     className={four ? "selected-button" : "select-button"}
                     onClick={(e) => handleFour(e)}
                     value={4}
@@ -183,7 +183,7 @@ function ExerciseNumberButtonGrid(props) {
 
 
                 <button
-                    id="five"
+                    id="five-number"
                     className={five ? "selected-button" : "select-button"}
                     onClick={(e) => handleFive(e)}
                     value={5}
@@ -192,7 +192,7 @@ function ExerciseNumberButtonGrid(props) {
                 </button>
 
                 <button
-                    id="six"
+                    id="six-number"
                     className={six ? "selected-button" : "select-button"}
                     onClick={(e) => handleSix(e)}
                     value={6}
@@ -201,7 +201,7 @@ function ExerciseNumberButtonGrid(props) {
                 </button>
 
                 <button
-                    id="seven"
+                    id="seven-number"
                     className={seven ? "selected-button" : "select-button"}
                     onClick={(e) => handleSeven(e)}
                     value={7}
@@ -210,7 +210,7 @@ function ExerciseNumberButtonGrid(props) {
                 </button> 
 
                 <button
-                    id="eight"
+                    id="eight-number"
                     className={eight ? "selected-button" : "select-button"}
                     onClick={(e) => handleEight(e)}
                     value={8}
@@ -219,7 +219,7 @@ function ExerciseNumberButtonGrid(props) {
                 </button> 
 
                 <button
-                    id="nine"
+                    id="nine=number"
                     className={nine ? "selected-button" : "select-button"}
                     onClick={(e) => handleNine(e)}
                     value={9}
@@ -229,7 +229,7 @@ function ExerciseNumberButtonGrid(props) {
 
 
                 <button
-                    id="ten"
+                    id="ten-number"
                     className={ten ? "selected-button" : "select-button"}
                     onClick={(e) => handleTen(e)}
                     value={10}
