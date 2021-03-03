@@ -1,5 +1,7 @@
 import './stylesheets/App.css'
 import './stylesheets/TopNav.css'
+import './stylesheets/Responsive.css'
+
 import {
   BrowserRouter as Router,
   Switch,
