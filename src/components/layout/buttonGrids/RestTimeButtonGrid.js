@@ -1,4 +1,6 @@
 import React, {useState} from 'react'
+import { connect } from 'react-redux'
+import { SET_REST_TIME } from '../../../actionTypes/index'
 
 function RestTimeButtonGrid(props) {
     const [ten, setTen] = useState(false)
@@ -11,6 +13,7 @@ function RestTimeButtonGrid(props) {
         setFifteen(false)
         setTwenty(false)
         setThirty(false)
+        props.setRestTime(e.target.value)
     }
 
     const handleFifteen = (e) => {
@@ -18,6 +21,7 @@ function RestTimeButtonGrid(props) {
         setFifteen(true)
         setTwenty(false)
         setThirty(false)
+        props.setRestTime(e.target.value)
     }
 
     const handleTwenty = (e) => {
@@ -25,6 +29,7 @@ function RestTimeButtonGrid(props) {
         setFifteen(false)
         setTwenty(true)
         setThirty(false)
+        props.setRestTime(e.target.value)
     }
 
     const handleThirty = (e) => {
@@ -32,6 +37,7 @@ function RestTimeButtonGrid(props) {
         setFifteen(false)
         setTwenty(false)
         setThirty(true)
+        props.setRestTime(e.target.value)
     }
 
     return (
@@ -76,4 +82,8 @@ function RestTimeButtonGrid(props) {
 
 }
 
-export default RestTimeButtonGrid
+const mapDispatchToProps = dispatch => ({
+    setRestTime: (number) => dispatch({ type: SET_REST_TIME, payload: number })
+})
+
+export default connect(null, mapDispatchToProps)(RestTimeButtonGrid)
