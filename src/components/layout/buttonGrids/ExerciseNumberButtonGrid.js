@@ -1,4 +1,10 @@
 import React, {useState} from 'react'
+import { connect } from 'react-redux'
+import {
+    SET_NUMBER_OF_EXERCISES,
+    SET_EXERCISES,
+    SET_EXERCISE_ROUNDS
+} from '../../../actionTypes/index'
 
 function ExerciseNumberButtonGrid(props) {
 
@@ -24,6 +30,9 @@ function ExerciseNumberButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(false)
+        props.setNumberOfExercises(e.target.value)
+        props.setExercises()
+        props.setExerciseRounds()
     }
 
     const handleTwo = (e) => {
@@ -37,6 +46,9 @@ function ExerciseNumberButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(false)
+        props.setNumberOfExercises(e.target.value)
+        props.setExercises()
+        props.setExerciseRounds()
     }
 
     const handleThree = (e) => {
@@ -50,6 +62,9 @@ function ExerciseNumberButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(false)
+        props.setNumberOfExercises(e.target.value)
+        props.setExercises()
+        props.setExerciseRounds()
     }
 
     const handleFour = (e) => {
@@ -63,6 +78,9 @@ function ExerciseNumberButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(false)
+        props.setNumberOfExercises(e.target.value)
+        props.setExercises()
+        props.setExerciseRounds()
     }
 
     const handleFive = (e) => {
@@ -76,6 +94,9 @@ function ExerciseNumberButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(false)
+        props.setNumberOfExercises(e.target.value)
+        props.setExercises()
+        props.setExerciseRounds()
     }
 
     const handleSix = (e) => {
@@ -89,6 +110,9 @@ function ExerciseNumberButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(false)
+        props.setNumberOfExercises(e.target.value)
+        props.setExercises()
+        props.setExerciseRounds()
     }
 
     const handleSeven = (e) => {
@@ -102,6 +126,9 @@ function ExerciseNumberButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(false)
+        props.setNumberOfExercises(e.target.value)
+        props.setExercises()
+        props.setExerciseRounds()
     }
 
     const handleEight = (e) => {
@@ -115,6 +142,9 @@ function ExerciseNumberButtonGrid(props) {
         setEight(true)
         setNine(false)
         setTen(false)
+        props.setNumberOfExercises(e.target.value)
+        props.setExercises()
+        props.setExerciseRounds()
     }
 
     const handleNine = (e) => {
@@ -128,6 +158,9 @@ function ExerciseNumberButtonGrid(props) {
         setEight(false)
         setNine(true)
         setTen(false)
+        props.setNumberOfExercises(e.target.value)
+        props.setExercises()
+        props.setExerciseRounds()
     }
 
     const handleTen = (e) => {
@@ -141,6 +174,9 @@ function ExerciseNumberButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(true)
+        props.setNumberOfExercises(e.target.value)
+        props.setExercises()
+        props.setExerciseRounds()
     }
 
     return (
@@ -240,4 +276,14 @@ function ExerciseNumberButtonGrid(props) {
     )
 }
 
-export default ExerciseNumberButtonGrid
+const mapStateToProps = state => ({
+    exercises: state.params.exercises
+})
+
+const mapDispatchToProps = dispatch => ({
+    setNumberOfExercises: (number) => dispatch({ type: SET_NUMBER_OF_EXERCISES, payload: number }),
+    setExercises: () => dispatch({ type: SET_EXERCISES }),
+    setExerciseRounds: () => dispatch({ type: SET_EXERCISE_ROUNDS }),
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(ExerciseNumberButtonGrid)
