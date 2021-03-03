@@ -21,7 +21,7 @@
 
   /* purples */
   --dark-purple: rgb(68, 9, 204);
-  --dark-purple-50-opacity: rgba(51, 8, 150, 0.5);
+  --dark-purple-50-opacity: rgba(51, 8, 150, 0.7);
   --medium-purple: rgb(202, 180, 253);
 
   /* blues */
@@ -43,6 +43,7 @@
   margin: 5rem;
 }
 
+/* WelcomeMessage.js */
 .welcome-message-wrapper {
   display: flex;
   flex-direction: column;
@@ -60,5 +61,26 @@
   font-family: var(--sans-pro);
   margin-top: -.25rem;
   color: var(--blue);
+  font-size: 1.1rem;
+}
+
+/* DisplaySelections.js */
+.display-selection-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.display-selection-title {
+  color: var(--dark-purple-50-opacity);
+  font-size: 1.5rem;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--dark-purple-50-opacity);
+  width: 25%;
+}
+
+.display-selection-description {
+  font-family: var(--sans-pro);
+  margin-top: -.25rem;
+  color: var(--dark-purple-50-opacity);
   font-size: 1.1rem;
 }
