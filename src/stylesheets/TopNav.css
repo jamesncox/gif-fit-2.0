@@ -2,7 +2,7 @@
 .top-nav {
     background-color: white;
     overflow: hidden;
-    font-family: var(--kanit);
+    font-family: var(--prompt);
     border-bottom: 2px solid var(--dark-purple);
 }
 
