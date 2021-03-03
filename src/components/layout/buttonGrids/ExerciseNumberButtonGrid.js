@@ -30,7 +30,7 @@ function ExerciseNumberButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(false)
-        props.setNumberOfExercises(e.target.value)
+        props.setNumberOfExercises(parseInt(e.target.value))
         props.setExercises()
         props.setExerciseRounds()
     }
@@ -46,7 +46,7 @@ function ExerciseNumberButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(false)
-        props.setNumberOfExercises(e.target.value)
+        props.setNumberOfExercises(parseInt(e.target.value))
         props.setExercises()
         props.setExerciseRounds()
     }
@@ -62,7 +62,7 @@ function ExerciseNumberButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(false)
-        props.setNumberOfExercises(e.target.value)
+        props.setNumberOfExercises(parseInt(e.target.value))
         props.setExercises()
         props.setExerciseRounds()
     }
@@ -78,7 +78,7 @@ function ExerciseNumberButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(false)
-        props.setNumberOfExercises(e.target.value)
+        props.setNumberOfExercises(parseInt(e.target.value))
         props.setExercises()
         props.setExerciseRounds()
     }
@@ -94,7 +94,7 @@ function ExerciseNumberButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(false)
-        props.setNumberOfExercises(e.target.value)
+        props.setNumberOfExercises(parseInt(e.target.value))
         props.setExercises()
         props.setExerciseRounds()
     }
@@ -110,7 +110,7 @@ function ExerciseNumberButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(false)
-        props.setNumberOfExercises(e.target.value)
+        props.setNumberOfExercises(parseInt(e.target.value))
         props.setExercises()
         props.setExerciseRounds()
     }
@@ -126,7 +126,7 @@ function ExerciseNumberButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(false)
-        props.setNumberOfExercises(e.target.value)
+        props.setNumberOfExercises(parseInt(e.target.value))
         props.setExercises()
         props.setExerciseRounds()
     }
@@ -142,7 +142,7 @@ function ExerciseNumberButtonGrid(props) {
         setEight(true)
         setNine(false)
         setTen(false)
-        props.setNumberOfExercises(e.target.value)
+        props.setNumberOfExercises(parseInt(e.target.value))
         props.setExercises()
         props.setExerciseRounds()
     }
@@ -158,7 +158,7 @@ function ExerciseNumberButtonGrid(props) {
         setEight(false)
         setNine(true)
         setTen(false)
-        props.setNumberOfExercises(e.target.value)
+        props.setNumberOfExercises(parseInt(e.target.value))
         props.setExercises()
         props.setExerciseRounds()
     }
@@ -174,7 +174,7 @@ function ExerciseNumberButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(true)
-        props.setNumberOfExercises(e.target.value)
+        props.setNumberOfExercises(parseInt(e.target.value))
         props.setExercises()
         props.setExerciseRounds()
     }

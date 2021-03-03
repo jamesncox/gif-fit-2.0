@@ -13,7 +13,7 @@ function ExerciseTimeButtonGrid(props) {
         setThirty(false)
         setForty(false)
         setSixty(false)
-        props.setExerciseTime(e.target.value)
+        props.setExerciseTime(parseInt(e.target.value))
     }
 
     const handleThirty = (e) => {
@@ -21,7 +21,7 @@ function ExerciseTimeButtonGrid(props) {
         setThirty(true)
         setForty(false)
         setSixty(false)
-        props.setExerciseTime(e.target.value)
+        props.setExerciseTime(parseInt(e.target.value))
     }
 
     const handleForty = (e) => {
@@ -29,7 +29,7 @@ function ExerciseTimeButtonGrid(props) {
         setThirty(false)
         setForty(true)
         setSixty(false)
-        props.setExerciseTime(e.target.value)
+        props.setExerciseTime(parseInt(e.target.value))
     }
 
     const handleSixty = (e) => {
@@ -37,7 +37,7 @@ function ExerciseTimeButtonGrid(props) {
         setThirty(false)
         setForty(false)
         setSixty(true)
-        props.setExerciseTime(e.target.value)
+        props.setExerciseTime(parseInt(e.target.value))
     }
 
     return (
@@ -46,7 +46,7 @@ function ExerciseTimeButtonGrid(props) {
                     id="twenty-exercise"
                     className={twenty ? "selected-button" : "select-button"}
                     onClick={(e) => handleTwenty(e)}
-                    value={20}
+                    value={20000}
                 >
                     20 sec
                 </button>
@@ -55,7 +55,7 @@ function ExerciseTimeButtonGrid(props) {
                     id="thirty-exercise"
                     className={thirty ? "selected-button" : "select-button"}
                     onClick={(e) => handleThirty(e)}
-                    value={30}
+                    value={30000}
                 >
                     30 sec
                 </button> 
@@ -64,7 +64,7 @@ function ExerciseTimeButtonGrid(props) {
                     id="forty-exercise"
                     className={forty ? "selected-button" : "select-button"}
                     onClick={(e) => handleForty(e)}
-                    value={40}
+                    value={40000}
                 >
                     40 sec
                 </button> 
@@ -73,7 +73,7 @@ function ExerciseTimeButtonGrid(props) {
                     id="sixty-exercise"
                     className={sixty ? "selected-button" : "select-button"}
                     onClick={(e) => handleSixty(e)}
-                    value={60}
+                    value={60000}
                 >
                     60 sec
                 </button>

@@ -1,4 +1,9 @@
 import React, {useState} from 'react'
+import { connect } from 'react-redux'
+import {
+    SET_NUMBER_OF_ROUNDS,
+    SET_EXERCISE_ROUNDS,
+} from '../../../actionTypes'
 
 function RoundroundButtonGrid(props) {
 
@@ -24,6 +29,8 @@ function RoundroundButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(false)
+        props.setNumberOfRounds(parseInt(e.target.value))
+        props.setExerciseRounds()
     }
 
     const handleTwo = (e) => {
@@ -37,6 +44,8 @@ function RoundroundButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(false)
+        props.setNumberOfRounds(parseInt(e.target.value))
+        props.setExerciseRounds()
     }
 
     const handleThree = (e) => {
@@ -50,6 +59,8 @@ function RoundroundButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(false)
+        props.setNumberOfRounds(parseInt(e.target.value))
+        props.setExerciseRounds()
     }
 
     const handleFour = (e) => {
@@ -63,6 +74,8 @@ function RoundroundButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(false)
+        props.setNumberOfRounds(parseInt(e.target.value))
+        props.setExerciseRounds()
     }
 
     const handleFive = (e) => {
@@ -76,6 +89,8 @@ function RoundroundButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(false)
+        props.setNumberOfRounds(parseInt(e.target.value))
+        props.setExerciseRounds()
     }
 
     const handleSix = (e) => {
@@ -89,6 +104,8 @@ function RoundroundButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(false)
+        props.setNumberOfRounds(parseInt(e.target.value))
+        props.setExerciseRounds()
     }
 
     const handleSeven = (e) => {
@@ -102,6 +119,8 @@ function RoundroundButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(false)
+        props.setNumberOfRounds(parseInt(e.target.value))
+        props.setExerciseRounds()
     }
 
     const handleEight = (e) => {
@@ -115,6 +134,8 @@ function RoundroundButtonGrid(props) {
         setEight(true)
         setNine(false)
         setTen(false)
+        props.setNumberOfRounds(parseInt(e.target.value))
+        props.setExerciseRounds()
     }
 
     const handleNine = (e) => {
@@ -128,6 +149,8 @@ function RoundroundButtonGrid(props) {
         setEight(false)
         setNine(true)
         setTen(false)
+        props.setNumberOfRounds(parseInt(e.target.value))
+        props.setExerciseRounds()
     }
 
     const handleTen = (e) => {
@@ -141,6 +164,8 @@ function RoundroundButtonGrid(props) {
         setEight(false)
         setNine(false)
         setTen(true)
+        props.setNumberOfRounds(parseInt(e.target.value))
+        props.setExerciseRounds()
     }
 
     return (
@@ -240,4 +265,9 @@ function RoundroundButtonGrid(props) {
     )
 }
 
-export default RoundroundButtonGrid
+const mapDispatchToProps = dispatch => ({
+    setNumberOfRounds: (number) => dispatch({ type: SET_NUMBER_OF_ROUNDS, payload: number }),
+    setExerciseRounds: () => dispatch({ type: SET_EXERCISE_ROUNDS })
+})
+
+export default connect(null, mapDispatchToProps)(RoundroundButtonGrid)

@@ -13,7 +13,7 @@ function RestTimeButtonGrid(props) {
         setFifteen(false)
         setTwenty(false)
         setThirty(false)
-        props.setRestTime(e.target.value)
+        props.setRestTime(parseInt(e.target.value))
     }
 
     const handleFifteen = (e) => {
@@ -21,7 +21,7 @@ function RestTimeButtonGrid(props) {
         setFifteen(true)
         setTwenty(false)
         setThirty(false)
-        props.setRestTime(e.target.value)
+        props.setRestTime(parseInt(e.target.value))
     }
 
     const handleTwenty = (e) => {
@@ -29,7 +29,7 @@ function RestTimeButtonGrid(props) {
         setFifteen(false)
         setTwenty(true)
         setThirty(false)
-        props.setRestTime(e.target.value)
+        props.setRestTime(parseInt(e.target.value))
     }
 
     const handleThirty = (e) => {
@@ -37,7 +37,7 @@ function RestTimeButtonGrid(props) {
         setFifteen(false)
         setTwenty(false)
         setThirty(true)
-        props.setRestTime(e.target.value)
+        props.setRestTime(parseInt(e.target.value))
     }
 
     return (
@@ -46,7 +46,7 @@ function RestTimeButtonGrid(props) {
                     id="ten-rest"
                     className={ten ? "selected-button" : "select-button"}
                     onClick={(e) => handleTen(e)}
-                    value={10}
+                    value={10000}
                 >
                     10 sec
                 </button>
@@ -55,7 +55,7 @@ function RestTimeButtonGrid(props) {
                     id="fifteen-rest"
                     className={fifteen ? "selected-button" : "select-button"}
                     onClick={(e) => handleFifteen(e)}
-                    value={15}
+                    value={15000}
                 >
                     15 sec
                 </button> 
@@ -64,7 +64,7 @@ function RestTimeButtonGrid(props) {
                     id="twenty-rest"
                     className={twenty ? "selected-button" : "select-button"}
                     onClick={(e) => handleTwenty(e)}
-                    value={20}
+                    value={20000}
                 >
                     20 sec
                 </button> 
@@ -73,7 +73,7 @@ function RestTimeButtonGrid(props) {
                     id="thirty-rest"
                     className={thirty ? "selected-button" : "select-button"}
                     onClick={(e) => handleThirty(e)}
-                    value={30}
+                    value={30000}
                 >
                     30 sec
                 </button>
