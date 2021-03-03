@@ -37,7 +37,7 @@ function RestTimeButtonGrid(props) {
     return (
         <div className="select-exercise-time-grid">
                 <button
-                    id="one-number"
+                    id="ten-rest"
                     className={ten ? "selected-button" : "select-button"}
                     onClick={(e) => handleTen(e)}
                     value={10}
@@ -46,7 +46,7 @@ function RestTimeButtonGrid(props) {
                 </button>
 
                 <button
-                    id="two-number"
+                    id="fifteen-rest"
                     className={fifteen ? "selected-button" : "select-button"}
                     onClick={(e) => handleFifteen(e)}
                     value={15}
@@ -55,7 +55,7 @@ function RestTimeButtonGrid(props) {
                 </button> 
 
                 <button
-                    id="three-number"
+                    id="twenty-rest"
                     className={twenty ? "selected-button" : "select-button"}
                     onClick={(e) => handleTwenty(e)}
                     value={20}
@@ -64,7 +64,7 @@ function RestTimeButtonGrid(props) {
                 </button> 
 
                 <button
-                    id="four-number"
+                    id="thirty-rest"
                     className={thirty ? "selected-button" : "select-button"}
                     onClick={(e) => handleThirty(e)}
                     value={30}
