@@ -1,16 +1,14 @@
-import React, { useRef }  from 'react'
+import React from 'react'
 
 function ExerciseNumberButtonGrid(props) {
-    const selectRef = useRef()
 
     const selectExerciseNumber = (e) => {
-        console.log(e.target.value)
+        console.log(e.target)
     }
 
     return (
         <div className="select-grid">
                 <button
-                    ref={selectRef}
                     id="one"
                     className="select-button"
                     onClick={(e) => selectExerciseNumber(e)}
@@ -20,7 +18,6 @@ function ExerciseNumberButtonGrid(props) {
                 </button>
 
                 <button
-                    ref={selectRef}
                     id="two"
                     className="select-button"
                     onClick={(e) => selectExerciseNumber(e)}
@@ -30,7 +27,6 @@ function ExerciseNumberButtonGrid(props) {
                 </button> 
 
                 <button
-                    ref={selectRef}
                     id="three"
                     className="select-button"
                     onClick={(e) => selectExerciseNumber(e)}
@@ -40,7 +36,6 @@ function ExerciseNumberButtonGrid(props) {
                 </button> 
 
                 <button
-                    ref={selectRef}
                     id="four"
                     className="select-button"
                     onClick={(e) => selectExerciseNumber(e)}
@@ -51,7 +46,6 @@ function ExerciseNumberButtonGrid(props) {
 
 
                 <button
-                    ref={selectRef}
                     id="five"
                     className="select-button"
                     onClick={(e) => selectExerciseNumber(e)}
@@ -61,7 +55,6 @@ function ExerciseNumberButtonGrid(props) {
                 </button>
 
                 <button
-                    ref={selectRef}
                     id="six"
                     className="select-button"
                     onClick={(e) => selectExerciseNumber(e)}
@@ -71,7 +64,6 @@ function ExerciseNumberButtonGrid(props) {
                 </button>
 
                 <button
-                    ref={selectRef}
                     id="seven"
                     className="select-button"
                     onClick={(e) => selectExerciseNumber(e)}
@@ -81,7 +73,6 @@ function ExerciseNumberButtonGrid(props) {
                 </button> 
 
                 <button
-                    ref={selectRef}
                     id="eight"
                     className="select-button"
                     onClick={(e) => selectExerciseNumber(e)}
@@ -91,7 +82,6 @@ function ExerciseNumberButtonGrid(props) {
                 </button> 
 
                 <button
-                    ref={selectRef}
                     id="nine"
                     className="select-button"
                     onClick={(e) => selectExerciseNumber(e)}
@@ -102,7 +92,6 @@ function ExerciseNumberButtonGrid(props) {
 
 
                 <button
-                    ref={selectRef}
                     id="ten"
                     className="select-button"
                     onClick={(e) => selectExerciseNumber(e)}

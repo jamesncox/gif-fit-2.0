@@ -115,3 +115,8 @@
     background-color: rgb(51, 8, 150);
     color: white;
 }
+
+.select-button:focus {     
+    background-color: rgb(51, 8, 150);
+    color: white;    
+}
