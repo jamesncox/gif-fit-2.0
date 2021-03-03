@@ -10,11 +10,11 @@ import {
     EXCLUDE_DUMBBELLS
 } from '../actionTypes'
 
-import exerciseData from '../data/dataURL.json'
-import dumbbellData from '../data/dumbbellsURL.json'
+import exerciseGifs from '../data/exerciseGifs.json'
+import dumbbellGifs from '../data/dumbbells.json'
 
 export default (state = {
-    currentData: exerciseData,
+    currentData: exerciseGifs,
     numberOfExercises: null,
     exerciseTime: null,
     restTime: null,
@@ -60,11 +60,11 @@ export default (state = {
             return { ...state, exercisesAsRounds: combinedExerciseArrays }
 
         case INCLUDE_DUMBBELLS:
-            const mergedDumbbellAndExerciseData = dumbbellData.concat(state.currentData)
-            return { ...state, currentData: mergedDumbbellAndExerciseData }
+            const mergedDumbbellAndexerciseGifs = dumbbellGifs.concat(state.currentData)
+            return { ...state, currentData: mergedDumbbellAndexerciseGifs }
 
         case EXCLUDE_DUMBBELLS:
-            return { ...state, currentData: exerciseData }
+            return { ...state, currentData: exerciseGifs }
 
         default:
             return state
