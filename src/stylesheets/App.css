@@ -16,10 +16,25 @@
   --dark-purple-50-opacity: rgba(51, 8, 150, 0.5);
   --medium-purple: rgb(133, 104, 201);
 
+  /* blues */
+  --blue: #195892;
+
   /* transition */
  --theme-transition: background-color .4s ease-in-out, color .4s ease-in-out;
 
   /* shadows */
   --black-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.425);
   --light-shadow: 0 4px 8px 1px var(--black);
+}
+
+.home-grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5rem;
+}
+
+.welcome-title {
+  color: var(--blue);
+  font-size: 1.5rem;
+  text-decoration: underline;
 }
