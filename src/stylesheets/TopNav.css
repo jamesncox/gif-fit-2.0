@@ -12,7 +12,7 @@
 .title {
     float: left;
     color: rgb(221, 2, 130);
-    margin-top: 2rem;
+    margin-top: 2.25rem;
     margin-bottom: -1rem;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -50,7 +50,6 @@
     font-size: 1rem;
     border: none;
     outline: none;
-    /* min-width: 160px; */
     color:rgb(141, 39, 209);
     padding: 1rem 1rem;
     background-color: inherit;
