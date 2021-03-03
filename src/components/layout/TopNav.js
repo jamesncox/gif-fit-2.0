@@ -2,6 +2,7 @@ import React from 'react'
 import ExerciseNumberButtonGrid from './buttonGrids/ExerciseNumberButtonGrid'
 import ExerciseTimeButtonGrid from './buttonGrids/ExerciseTimeButtonGrid'
 import RestTimeButtonGrid from './buttonGrids/RestTimeButtonGrid'
+import RoundNumberButtonGrid from './buttonGrids/RoundNumberButtonGrid'
 
 function TopNav(props) {
     return (
@@ -45,9 +46,7 @@ function TopNav(props) {
                         <i className="fa fa-caret-down"></i>
                     </button>
                     <div className="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <RoundNumberButtonGrid />
                     </div>
                 </div>
 

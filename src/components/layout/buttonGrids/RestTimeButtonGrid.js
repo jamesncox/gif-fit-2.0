@@ -35,7 +35,7 @@ function RestTimeButtonGrid(props) {
     }
 
     return (
-        <div className="select-exercise-time-grid">
+        <div className="select-time-grid">
                 <button
                     id="ten-rest"
                     className={ten ? "selected-button" : "select-button"}

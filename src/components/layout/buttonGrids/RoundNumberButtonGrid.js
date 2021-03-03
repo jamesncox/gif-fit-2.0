@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-function ExerciseNumberButtonGrid(props) {
+function RoundroundButtonGrid(props) {
 
     const [one, setOne] = useState(false)
     const [two, setTwo] = useState(false)
@@ -146,7 +146,7 @@ function ExerciseNumberButtonGrid(props) {
     return (
         <div className="select-number-grid">
                 <button
-                    id="one-number"
+                    id="one-round"
                     className={one ? "selected-button" : "select-button"}
                     onClick={(e) => handleOne(e)}
                     value={1}
@@ -155,7 +155,7 @@ function ExerciseNumberButtonGrid(props) {
                 </button>
 
                 <button
-                    id="two-number"
+                    id="two-round"
                     className={two ? "selected-button" : "select-button"}
                     onClick={(e) => handleTwo(e)}
                     value={2}
@@ -164,7 +164,7 @@ function ExerciseNumberButtonGrid(props) {
                 </button> 
 
                 <button
-                    id="three-number"
+                    id="three-round"
                     className={three ? "selected-button" : "select-button"}
                     onClick={(e) => handleThree(e)}
                     value={3}
@@ -173,7 +173,7 @@ function ExerciseNumberButtonGrid(props) {
                 </button> 
 
                 <button
-                    id="four-number"
+                    id="four-round"
                     className={four ? "selected-button" : "select-button"}
                     onClick={(e) => handleFour(e)}
                     value={4}
@@ -183,7 +183,7 @@ function ExerciseNumberButtonGrid(props) {
 
 
                 <button
-                    id="five-number"
+                    id="five-round"
                     className={five ? "selected-button" : "select-button"}
                     onClick={(e) => handleFive(e)}
                     value={5}
@@ -192,7 +192,7 @@ function ExerciseNumberButtonGrid(props) {
                 </button>
 
                 <button
-                    id="six-number"
+                    id="six-round"
                     className={six ? "selected-button" : "select-button"}
                     onClick={(e) => handleSix(e)}
                     value={6}
@@ -201,7 +201,7 @@ function ExerciseNumberButtonGrid(props) {
                 </button>
 
                 <button
-                    id="seven-number"
+                    id="seven-round"
                     className={seven ? "selected-button" : "select-button"}
                     onClick={(e) => handleSeven(e)}
                     value={7}
@@ -210,7 +210,7 @@ function ExerciseNumberButtonGrid(props) {
                 </button> 
 
                 <button
-                    id="eight-number"
+                    id="eight-round"
                     className={eight ? "selected-button" : "select-button"}
                     onClick={(e) => handleEight(e)}
                     value={8}
@@ -219,7 +219,7 @@ function ExerciseNumberButtonGrid(props) {
                 </button> 
 
                 <button
-                    id="nine=number"
+                    id="nine=round"
                     className={nine ? "selected-button" : "select-button"}
                     onClick={(e) => handleNine(e)}
                     value={9}
@@ -229,7 +229,7 @@ function ExerciseNumberButtonGrid(props) {
 
 
                 <button
-                    id="ten-number"
+                    id="ten-round"
                     className={ten ? "selected-button" : "select-button"}
                     onClick={(e) => handleTen(e)}
                     value={10}
@@ -240,4 +240,4 @@ function ExerciseNumberButtonGrid(props) {
     )
 }
 
-export default ExerciseNumberButtonGrid
+export default RoundroundButtonGrid
