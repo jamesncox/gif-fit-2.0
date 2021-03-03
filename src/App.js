@@ -2,6 +2,7 @@ import './stylesheets/App.css'
 import './stylesheets/TopNav.css'
 import './stylesheets/SideNav.css'
 import './stylesheets/Responsive.css'
+import './stylesheets/NavSelectGrids.css'
 
 import {
   BrowserRouter as Router,

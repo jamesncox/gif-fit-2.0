@@ -1,0 +1,44 @@
+/* select exercise number grid */
+.select-exercise-number-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5rem;
+    padding: .5rem;
+}
+
+.select-button {
+    cursor: pointer;
+    height: 36px;
+    font-size: 1.25rem;
+    color: rgb(51, 8, 150);
+    background-color: white;
+    /* margin: .75rem; */
+    border: 2px solid rgba(51, 8, 150, 0.5);
+    border-radius: 10px;
+    outline: none;
+}
+
+.select-button:hover {
+    background-color: rgba(51, 8, 150, 0.5);
+    color: white;
+}
+
+.selected-button {   
+    cursor: pointer;
+    height: 36px;
+    font-size: 1.25rem;
+    /* margin: .75rem; */
+    background-color: rgb(51, 8, 150);
+    color: white;
+    border: 2px solid rgb(51, 8, 150);
+    border-radius: 10px;
+    outline: none;
+}
+
+/* select exercise time grid */
+.select-exercise-time-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .5rem;
+    padding: .5rem;
+}
