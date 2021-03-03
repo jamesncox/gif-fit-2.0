@@ -12,6 +12,7 @@ import {
 
 import TopNav from './components/layout/TopNav'
 import SideNav from './components/layout/SideNav'
+import Home from './components/layout/Home'
 
 function App() {
   return (
@@ -19,6 +20,11 @@ function App() {
       <div className="App">
         <TopNav />
         <SideNav />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
       </div>
     </Router>
   );
