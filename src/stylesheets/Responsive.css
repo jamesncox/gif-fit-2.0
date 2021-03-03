@@ -7,8 +7,8 @@
         display: block;
     }
 
-    .hamburger {
-        display: block;
+    .sidenav-wrapper {
+        display: flex;
     }
 }
 
@@ -21,7 +21,7 @@
         display: none;
     }
 
-    .hamburger {
+    .sidenav-wrapper {
         display: none;
     }
 }

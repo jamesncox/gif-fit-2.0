@@ -1,11 +1,12 @@
 .sidenav {
+    font-family: Arial;
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: rgb(39, 4, 119);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -14,8 +15,8 @@
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 20px;
+    color: white;
     display: block;
     transition: 0.3s;
   }
@@ -32,7 +33,23 @@
     margin-left: 50px;
   }
 
+  .sidenav-wrapper {
+    font-family: Arial;
+    display: flex;
+    border-bottom: 2px solid rgb(51, 8, 150);
+  }
+
   .hamburger {
-      cursor: pointer;
-      font-size: 2rem;
+    margin-left: .5rem;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: 36px;
+    padding-bottom: 3px;
+    color: rgb(51, 8, 150);
+  }
+
+  .sidenav-title {
+    /* margin-top: 40px; */
+    margin-left: 1rem;
+    color: rgb(221, 2, 130);
   }

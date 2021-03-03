@@ -4,7 +4,7 @@ function SideNav(props) {
     const navRef = useRef()
 
     function openNav() {
-        navRef.current.style.width = "50%"
+        navRef.current.style.width = "75%"
     }
 
     function closeNav() {
@@ -13,7 +13,15 @@ function SideNav(props) {
 
     return (
         <>
-            <span className="hamburger" onClick={() => openNav()}>&#9776; open</span>
+            <div className="sidenav-wrapper">
+                <span className="hamburger" onClick={() => openNav()}>
+                    &#9776; 
+                </span>
+                <h1 className="sidenav-title">
+                    GIF FIT
+                </h1>
+            </div>
+
             <div id="mySidenav" className="sidenav" ref={navRef}>
                 <a href="javascript:void(0)" className="closebtn" onClick={() => closeNav()}>&times;</a>
                 <a href="#">About</a>
