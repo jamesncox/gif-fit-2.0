@@ -1,7 +1,7 @@
 import React from 'react'
+import ExerciseNumberButtonGrid from './ExerciseNumberButtonGrid'
 
 function TopNav(props) {
-
     return (
         <div className="top-nav">
             <h1 className="title">GIF FIT</h1>
@@ -13,9 +13,7 @@ function TopNav(props) {
                         <i className="fa fa-caret-down"></i>
                     </button>
                     <div className="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <ExerciseNumberButtonGrid />
                     </div>
                 </div>
 
