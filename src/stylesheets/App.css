@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 .App {
   margin-top: -2rem;
@@ -11,6 +12,7 @@
   /* fonts */
   --prompt: 'Prompt', sans-serif;
   --ubuntu: 'Ubuntu', sans-serif;
+  --sans-pro: 'Source Sans Pro', sans-serif;
 
   /* neutrals */
   --black: black;
@@ -35,16 +37,28 @@
 }
 
 .home-grid-wrapper {
+  font-family: var(--ubuntu);
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 5rem;
 }
 
+.welcome-message-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .welcome-title {
-  font-family: var(--ubuntu);
   color: var(--blue);
   font-size: 1.5rem;
   padding-bottom: 8px;
   border-bottom: 1px solid var(--blue);
   width: 75%;
+}
+
+.welcome-description {
+  font-family: var(--sans-pro);
+  margin-top: -.25rem;
+  color: var(--blue);
+  font-size: 1.1rem;
 }
