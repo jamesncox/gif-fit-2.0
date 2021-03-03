@@ -12,7 +12,7 @@ function TopNav(props) {
             <div className="nav-flex-wrapper">
                 <div className="dropdown">
                     <button className="dropbtn">
-                        Exercises
+                        EXERCISES
                         <i className="fa fa-caret-down"></i>
                     </button>
                     <div className="dropdown-content">
@@ -22,7 +22,7 @@ function TopNav(props) {
 
                 <div className="dropdown">
                     <button className="dropbtn">
-                        Time
+                        TIME
                         <i className="fa fa-caret-down"></i>
                     </button>
                     <div className="dropdown-content">
@@ -32,7 +32,7 @@ function TopNav(props) {
 
                 <div className="dropdown">
                     <button className="dropbtn">
-                        Rest
+                        REST
                         <i className="fa fa-caret-down"></i>
                     </button>
                     <div className="dropdown-content">
@@ -42,7 +42,7 @@ function TopNav(props) {
 
                 <div className="dropdown">
                     <button className="dropbtn">
-                        Rounds
+                        ROUNDS
                         <i className="fa fa-caret-down"></i>
                     </button>
                     <div className="dropdown-content">

@@ -32,7 +32,7 @@ function SideNav(props) {
                 <div className="sidenav-wrapper">
                     <div className="dropdown">
                         <button className="dropbtn">
-                           Exercise No.
+                           EXERCISES
                             <i className="fa fa-caret-down"></i>
                         </button>
                         <div className="dropdown-content">
@@ -41,7 +41,7 @@ function SideNav(props) {
                     </div>
                     <div className="dropdown">
                         <button className="dropbtn">
-                            Exercise Time
+                            TIME
                             <i className="fa fa-caret-down"></i>
                         </button>
                         <div className="dropdown-content">
@@ -50,7 +50,7 @@ function SideNav(props) {
                     </div>
                     <div className="dropdown">
                         <button className="dropbtn">
-                            Rest Time
+                            REST
                             <i className="fa fa-caret-down"></i>
                         </button>
                         <div className="dropdown-content">
@@ -59,7 +59,7 @@ function SideNav(props) {
                     </div>
                     <div className="dropdown">
                         <button className="dropbtn">
-                            Round No.
+                            ROUNDS
                             <i className="fa fa-caret-down"></i>
                         </button>
                         <div className="dropdown-content">
