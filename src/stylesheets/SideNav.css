@@ -40,7 +40,7 @@
   }
 
   .hamburger {
-    margin-left: .5rem;
+    margin-left: 1.5rem;
     cursor: pointer;
     font-size: 2rem;
     margin-top: 30px;
@@ -51,6 +51,6 @@
   .sidenav-title {
     position: fixed;
     margin-top: 36px;
-    margin-left: 3rem;
+    margin-left: 4rem;
     color: rgb(221, 2, 130);
   }
