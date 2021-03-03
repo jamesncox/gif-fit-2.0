@@ -10,10 +10,8 @@
   --white: white;
   --off-white: rgb(245, 245, 245);
 
-  /* rose/reds */
-  --bright-pink: rgb(221, 2, 130);
-
   /* purples */
+  --purple-pink: rgb(158, 41, 255);
   --dark-purple: rgb(51, 8, 150);
   --dark-purple-50-opacity: rgba(51, 8, 150, 0.5);
   --medium-purple: rgb(133, 104, 201);
