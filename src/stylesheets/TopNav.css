@@ -2,7 +2,7 @@
 .top-nav {
     background-color: white;
     overflow: hidden;
-    font-family: Arial;
+    font-family: var(--kanit);
     border-bottom: 2px solid var(--dark-purple);
 }
 
@@ -10,7 +10,7 @@
 .title {
     float: left;
     color: var(--purple-pink);
-    margin-top: 2.25rem;
+    margin-top: 30px;
     margin-bottom: -1rem;
     margin-left: 2rem;
     margin-right: 1rem;

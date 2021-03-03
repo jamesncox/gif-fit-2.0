@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
 .App {
   margin-top: -2rem;
   margin-right: -1rem;
@@ -5,6 +8,9 @@
 }
 
 :root {
+  /* fonts */
+  --kanit: 'Prompt', sans-serif;
+
   /* neutrals */
   --black: black;
   --white: white;

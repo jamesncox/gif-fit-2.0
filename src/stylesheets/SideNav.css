@@ -1,5 +1,5 @@
 .sidenav {
-    font-family: Arial;
+    font-family: var(--kanit);
     height: 100%;
     width: 0;
     position: fixed;
@@ -41,7 +41,7 @@
 }
 
 .sidenav-hamburger-wrapper {
-  font-family: Arial;
+  font-family: var(--kanit);
   display: flex;
   border-bottom: 2px solid var(--dark-purple);
 }
@@ -57,7 +57,7 @@
 
 .sidenav-title {
   position: fixed;
-  margin-top: 36px;
+  margin-top: 30px;
   margin-left: 4rem;
   color: var(--purple-pink);
 }
