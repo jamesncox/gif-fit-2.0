@@ -1,6 +1,6 @@
 import React, {useRef} from 'react'
-import ExerciseNumberButtonGrid from './ExerciseNumberButtonGrid'
-import ExerciseTimeButtonGrid from './ExerciseTimeButtonGrid'
+import ExerciseNumberButtonGrid from './buttonGrids/ExerciseNumberButtonGrid'
+import ExerciseTimeButtonGrid from './buttonGrids/ExerciseTimeButtonGrid'
 
 function SideNav(props) {
     const navRef = useRef()
