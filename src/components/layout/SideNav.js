@@ -4,7 +4,7 @@ function SideNav(props) {
     const navRef = useRef()
 
     function openNav() {
-        navRef.current.style.width = "75%"
+        navRef.current.style.width = "275px"
     }
 
     function closeNav() {
