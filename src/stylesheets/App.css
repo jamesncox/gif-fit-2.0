@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
 
 .App {
@@ -10,6 +10,7 @@
 :root {
   /* fonts */
   --prompt: 'Prompt', sans-serif;
+  --ubuntu: 'Ubuntu', sans-serif;
 
   /* neutrals */
   --black: black;
@@ -40,7 +41,10 @@
 }
 
 .welcome-title {
+  font-family: var(--ubuntu);
   color: var(--blue);
   font-size: 1.5rem;
-  text-decoration: underline;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--blue);
+  width: 75%;
 }
