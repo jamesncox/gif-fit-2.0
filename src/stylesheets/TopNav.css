@@ -60,6 +60,8 @@
 .top-nav a:hover, .dropdown:hover .dropbtn {
     background-color: rgb(51, 8, 150);
     color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 /* Dropdown content (hidden by default) */
@@ -71,6 +73,8 @@
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.425);
     z-index: 1;
     border: solid 2px rgb(51, 8, 150);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 /* Links inside the dropdown */
@@ -106,8 +110,9 @@
     font-size: 1.5rem;
     color: rgb(51, 8, 150);
     background-color: white;
-    margin: .5rem;
-    border: 1px solid rgb(51, 8, 150);
+    margin: .75rem;
+    border: 2px solid rgb(51, 8, 150);
+    border-radius: 10px;
     /* outline: none; */
 }
 
