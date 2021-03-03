@@ -84,3 +84,11 @@
   color: var(--dark-purple-50-opacity);
   font-size: 1.1rem;
 }
+
+.display-selection-time {
+  color: var(--dark-purple-50-opacity);
+  font-size: 1.5rem;
+  padding-top: 8px;
+  border-top: 1px solid var(--dark-purple-50-opacity);
+  width: 25%;
+}

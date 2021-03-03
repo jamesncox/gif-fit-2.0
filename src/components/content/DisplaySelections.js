@@ -19,12 +19,16 @@ function DisplaySelections(props) {
     return (
         <div className="display-selection-wrapper">
             <p className="display-selection-title">Your Workout</p>
-            {props.numberOfExercises ? <p className="display-selection-description">Exercises - {props.numberOfExercises} </p> : null}
+            {props.numberOfExercises ? <p className="display-selection-description">Exercises: {props.numberOfExercises} </p> : null}
             <ul className="display-selection-description">
                 {props.exercises.map(exercise => {
-                    return <li>{exercise.name}</li>
+                    return <li key={exercise.id}>{exercise.name}</li>
                 })}
             </ul>
+            {props.exerciseTime ? <p className="display-selection-description">Exercise Time: {props.exerciseTime / 1000} seconds</p> : null}
+            {props.restTime ? <p className="display-selection-description">Rest Time: {props.restTime / 1000} seconds</p> : null}
+            {props.numberOfRounds ? <p className="display-selection-description">Number of Rounds: {props.numberOfRounds}</p> : null}
+            {props.numberOfExercises && props.exerciseTime && props.restTime && props.numberOfRounds ? <p className="display-selection-time">TOTAL TIME: {calculateTotalTime()}</p> : null}
         </div>
     )
 
