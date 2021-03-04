@@ -1,6 +1,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { CLEAR_PARAMS } from '../../actionTypes/index'
+import { 
+    CLEAR_PARAMS,
+    CLEAR_SELECTED_STYLES
+} from '../../actionTypes/index'
 
 function DisplaySelections(props) {
 
@@ -19,6 +22,7 @@ function DisplaySelections(props) {
 
     const handleClearParams = () => {
         props.clearParams()
+        props.clearSelectedStyles()
     }
 
     return (
@@ -52,7 +56,8 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-    clearParams: () => dispatch({type: CLEAR_PARAMS})
+    clearParams: () => dispatch({type: CLEAR_PARAMS}),
+    clearSelectedStyles: () => dispatch({type: CLEAR_SELECTED_STYLES})
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(DisplaySelections)

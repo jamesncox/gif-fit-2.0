@@ -16,6 +16,9 @@ const IS_ACTIVE_FALSE = "IS_ACTIVE_FALSE"
 // Success Gif Message
 const SET_SUCCESS_GIF = "SET_SUCCESS_GIF"
 
+// Selected Styles
+const CLEAR_SELECTED_STYLES = "CLEAR_SELECTED_STYLES"
+
 export {
     // Params
     SET_NUMBER_OF_EXERCISES,
@@ -33,5 +36,8 @@ export {
     IS_ACTIVE_FALSE,
 
     // Success Gif Message
-    SET_SUCCESS_GIF
+    SET_SUCCESS_GIF,
+
+    // Selected Styles
+    CLEAR_SELECTED_STYLES
 }
