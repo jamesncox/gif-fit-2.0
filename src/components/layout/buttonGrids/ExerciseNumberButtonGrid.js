@@ -1,189 +1,99 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { connect } from 'react-redux'
 import {
     SET_NUMBER_OF_EXERCISES,
     SET_EXERCISES,
-    SET_EXERCISE_ROUNDS
+    SET_EXERCISE_ROUNDS,
+    SET_ONE_EX,
+    SET_TWO_EX,
+    SET_THREE_EX,
+    SET_FOUR_EX,
+    SET_FIVE_EX,
+    SET_SIX_EX,
+    SET_SEVEN_EX,
+    SET_EIGHT_EX,
+    SET_NINE_EX,
+    SET_TEN_EX,
 } from '../../../actionTypes/index'
 
 function ExerciseNumberButtonGrid(props) {
 
-    const [one, setOne] = useState(false)
-    const [two, setTwo] = useState(false)
-    const [three, setThree] = useState(false)
-    const [four, setFour] = useState(false)
-    const [five, setFive] = useState(false)
-    const [six, setSix] = useState(false)
-    const [seven, setSeven] = useState(false)
-    const [eight, setEight] = useState(false)
-    const [nine, setNine] = useState(false)
-    const [ten, setTen] = useState(false)
-
     const handleOne = (e) => {
-        setOne(true)
-        setTwo(false)
-        setThree(false)
-        setFour(false)
-        setFive(false)
-        setSix(false)
-        setSeven(false)
-        setEight(false)
-        setNine(false)
-        setTen(false)
+        props.setOneEx()
         props.setNumberOfExercises(parseInt(e.target.value))
         props.setExercises()
         props.setExerciseRounds()
     }
 
     const handleTwo = (e) => {
-        setOne(false)
-        setTwo(true)
-        setThree(false)
-        setFour(false)
-        setFive(false)
-        setSix(false)
-        setSeven(false)
-        setEight(false)
-        setNine(false)
-        setTen(false)
+        props.setTwoEx()
         props.setNumberOfExercises(parseInt(e.target.value))
         props.setExercises()
         props.setExerciseRounds()
     }
 
     const handleThree = (e) => {
-        setOne(false)
-        setTwo(false)
-        setThree(true)
-        setFour(false)
-        setFive(false)
-        setSix(false)
-        setSeven(false)
-        setEight(false)
-        setNine(false)
-        setTen(false)
+        props.setThreeEx()
         props.setNumberOfExercises(parseInt(e.target.value))
         props.setExercises()
         props.setExerciseRounds()
     }
 
     const handleFour = (e) => {
-        setOne(false)
-        setTwo(false)
-        setThree(false)
-        setFour(true)
-        setFive(false)
-        setSix(false)
-        setSeven(false)
-        setEight(false)
-        setNine(false)
-        setTen(false)
+        props.setFourEx()
         props.setNumberOfExercises(parseInt(e.target.value))
         props.setExercises()
         props.setExerciseRounds()
     }
 
     const handleFive = (e) => {
-        setOne(false)
-        setTwo(false)
-        setThree(false)
-        setFour(false)
-        setFive(true)
-        setSix(false)
-        setSeven(false)
-        setEight(false)
-        setNine(false)
-        setTen(false)
+        props.setFiveEx()
         props.setNumberOfExercises(parseInt(e.target.value))
         props.setExercises()
         props.setExerciseRounds()
     }
 
     const handleSix = (e) => {
-        setOne(false)
-        setTwo(false)
-        setThree(false)
-        setFour(false)
-        setFive(false)
-        setSix(true)
-        setSeven(false)
-        setEight(false)
-        setNine(false)
-        setTen(false)
+        props.setSixEx()
         props.setNumberOfExercises(parseInt(e.target.value))
         props.setExercises()
         props.setExerciseRounds()
     }
 
     const handleSeven = (e) => {
-        setOne(false)
-        setTwo(false)
-        setThree(false)
-        setFour(false)
-        setFive(false)
-        setSix(false)
-        setSeven(true)
-        setEight(false)
-        setNine(false)
-        setTen(false)
+        props.setSevenEx()
         props.setNumberOfExercises(parseInt(e.target.value))
         props.setExercises()
         props.setExerciseRounds()
     }
 
     const handleEight = (e) => {
-        setOne(false)
-        setTwo(false)
-        setThree(false)
-        setFour(false)
-        setFive(false)
-        setSix(false)
-        setSeven(false)
-        setEight(true)
-        setNine(false)
-        setTen(false)
+        props.setEightEx()
         props.setNumberOfExercises(parseInt(e.target.value))
         props.setExercises()
         props.setExerciseRounds()
     }
 
     const handleNine = (e) => {
-        setOne(false)
-        setTwo(false)
-        setThree(false)
-        setFour(false)
-        setFive(false)
-        setSix(false)
-        setSeven(false)
-        setEight(false)
-        setNine(true)
-        setTen(false)
+        props.setNineEx()
         props.setNumberOfExercises(parseInt(e.target.value))
         props.setExercises()
         props.setExerciseRounds()
     }
 
     const handleTen = (e) => {
-        setOne(false)
-        setTwo(false)
-        setThree(false)
-        setFour(false)
-        setFive(false)
-        setSix(false)
-        setSeven(false)
-        setEight(false)
-        setNine(false)
-        setTen(true)
+        props.setTenEx()
         props.setNumberOfExercises(parseInt(e.target.value))
         props.setExercises()
         props.setExerciseRounds()
     }
 
     return (
+        console.log(props.selectedStyles),
         <div className="select-number-grid">
                 <button
                     id="one-number"
-                    className={one ? "selected-button" : "select-button"}
+                    className={props.selectedStyles.oneEx ? "selected-button" : "select-button"}
                     onClick={(e) => handleOne(e)}
                     value={1}
                 >
@@ -192,7 +102,7 @@ function ExerciseNumberButtonGrid(props) {
 
                 <button
                     id="two-number"
-                    className={two ? "selected-button" : "select-button"}
+                    className={props.selectedStyles.twoEx ? "selected-button" : "select-button"}
                     onClick={(e) => handleTwo(e)}
                     value={2}
                 >
@@ -201,7 +111,7 @@ function ExerciseNumberButtonGrid(props) {
 
                 <button
                     id="three-number"
-                    className={three ? "selected-button" : "select-button"}
+                    className={props.selectedStyles.threeEx ? "selected-button" : "select-button"}
                     onClick={(e) => handleThree(e)}
                     value={3}
                 >
@@ -210,7 +120,7 @@ function ExerciseNumberButtonGrid(props) {
 
                 <button
                     id="four-number"
-                    className={four ? "selected-button" : "select-button"}
+                    className={props.selectedStyles.fourEx ? "selected-button" : "select-button"}
                     onClick={(e) => handleFour(e)}
                     value={4}
                 >
@@ -220,7 +130,7 @@ function ExerciseNumberButtonGrid(props) {
 
                 <button
                     id="five-number"
-                    className={five ? "selected-button" : "select-button"}
+                    className={props.selectedStyles.fiveEx ? "selected-button" : "select-button"}
                     onClick={(e) => handleFive(e)}
                     value={5}
                 >
@@ -229,7 +139,7 @@ function ExerciseNumberButtonGrid(props) {
 
                 <button
                     id="six-number"
-                    className={six ? "selected-button" : "select-button"}
+                    className={props.selectedStyles.sixEx ? "selected-button" : "select-button"}
                     onClick={(e) => handleSix(e)}
                     value={6}
                 >
@@ -238,7 +148,7 @@ function ExerciseNumberButtonGrid(props) {
 
                 <button
                     id="seven-number"
-                    className={seven ? "selected-button" : "select-button"}
+                    className={props.selectedStyles.sevenEx ? "selected-button" : "select-button"}
                     onClick={(e) => handleSeven(e)}
                     value={7}
                 >
@@ -247,7 +157,7 @@ function ExerciseNumberButtonGrid(props) {
 
                 <button
                     id="eight-number"
-                    className={eight ? "selected-button" : "select-button"}
+                    className={props.selectedStyles.eightEx ? "selected-button" : "select-button"}
                     onClick={(e) => handleEight(e)}
                     value={8}
                 >
@@ -256,7 +166,7 @@ function ExerciseNumberButtonGrid(props) {
 
                 <button
                     id="nine=number"
-                    className={nine ? "selected-button" : "select-button"}
+                    className={props.selectedStyles.nineEx ? "selected-button" : "select-button"}
                     onClick={(e) => handleNine(e)}
                     value={9}
                 >
@@ -266,7 +176,7 @@ function ExerciseNumberButtonGrid(props) {
 
                 <button
                     id="ten-number"
-                    className={ten ? "selected-button" : "select-button"}
+                    className={props.selectedStyles.tenEx ? "selected-button" : "select-button"}
                     onClick={(e) => handleTen(e)}
                     value={10}
                 >
@@ -277,13 +187,23 @@ function ExerciseNumberButtonGrid(props) {
 }
 
 const mapStateToProps = state => ({
-    exercises: state.params.exercises
+    selectedStyles: state.selectedStyles
 })
 
 const mapDispatchToProps = dispatch => ({
     setNumberOfExercises: (number) => dispatch({ type: SET_NUMBER_OF_EXERCISES, payload: number }),
     setExercises: () => dispatch({ type: SET_EXERCISES }),
     setExerciseRounds: () => dispatch({ type: SET_EXERCISE_ROUNDS }),
+    setOneEx: () => dispatch({ type: SET_ONE_EX }),
+    setTwoEx: () => dispatch({ type: SET_TWO_EX }),
+    setThreeEx: () => dispatch({ type: SET_THREE_EX }),
+    setFourEx: () => dispatch({ type: SET_FOUR_EX }),
+    setFiveEx: () => dispatch({ type: SET_FIVE_EX }),
+    setSixEx: () => dispatch({ type: SET_SIX_EX }),
+    setSevenEx: () => dispatch({ type: SET_SEVEN_EX }),
+    setEightEx: () => dispatch({ type: SET_EIGHT_EX }),
+    setNineEx: () => dispatch({ type: SET_NINE_EX }),
+    setTenEx: () => dispatch({ type: SET_TEN_EX }),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(ExerciseNumberButtonGrid)
