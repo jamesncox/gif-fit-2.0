@@ -1,4 +1,8 @@
 @media only screen and (max-width: 800px) {
+    .App {
+        margin: 0;
+    }
+    
     .top-nav {
         display: none;
     }
@@ -11,7 +15,6 @@
         display: flex;
     }
 
-    
     .dropdown .dropbtn {
         color: var(--white);
         white-space: nowrap;
@@ -35,6 +38,21 @@
         margin-left: -1.25rem;
         margin-top: 5rem;
     }
+
+    .home-grid-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .display-selection-title {
+        width: 100%;
+    }
+
+    .display-selection-description {
+        width: 100%;
+    }
+    
 }
 
 @media only screen and (min-width: 800px) {

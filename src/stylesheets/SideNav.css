@@ -1,15 +1,15 @@
 .sidenav {
-    font-family: var(--prompt);
-    height: 100%;
-    width: 0;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(30, 2, 83);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
+  font-family: var(--prompt);
+  height: 100%;
+  width: 0;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(30, 2, 83);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
 
 .sidenav-wrapper {
   display: flex;
@@ -40,7 +40,6 @@
 }
 
 .sidenav-hamburger-wrapper {
-  position: sticky;
   background-color: white;
   top: 0;
   font-family: var(--prompt);
@@ -58,7 +57,7 @@
 }
 
 .sidenav-title {
-  position: fixed;
+  /* position: fixed; */
   margin-top: 30px;
   margin-left: 4rem;
   color: var(--purple-pink);
