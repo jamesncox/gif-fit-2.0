@@ -11,7 +11,7 @@ function WelcomeMessage(props) {
                 <li>Rest Time</li>
                 <li>Number of rounds</li>
             </ul>
-            <p className="welcome-description" style={{width: "75%"}}>GIF FIT recommends resting for half the time you exercise (adhering to the Tabata Method). But you can choose any rest time to make a workout more or less challenging.</p>
+            <p className="welcome-description">GIF FIT recommends resting for half the time you exercise (adhering to the Tabata Method). But you can choose any rest time to make a workout more or less challenging.</p>
         </div>
     )
 }

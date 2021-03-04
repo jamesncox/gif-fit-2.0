@@ -3,9 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 .App {
-  margin-top: -2rem;
-  margin-right: -1rem;
-  margin-left: -1rem;
+  margin: 0;
 }
 
 :root {
@@ -40,7 +38,10 @@
   font-family: var(--ubuntu);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 5rem;
+  margin-top: 0;
+  /* margin: 5rem; */
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 /* WelcomeMessage.js */
@@ -62,6 +63,7 @@
   margin-top: -.25rem;
   color: var(--blue);
   font-size: 1.1rem;
+  width: 75%;
 }
 
 /* DisplaySelections.js */
