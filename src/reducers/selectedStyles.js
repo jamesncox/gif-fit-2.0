@@ -299,6 +299,42 @@ export default (state = {
                 sixtyEx: true,
             }
 
+        case SET_TEN_REST:
+            return {
+                ...state, 
+                tenRest: true,
+                fifteenRest: false,
+                twentyRest: false,
+                thirtyRest: false,
+            }
+
+        case SET_FIFTEEN_REST:
+            return {
+                ...state, 
+                tenRest: false,
+                fifteenRest: true,
+                thirtyRest: false,
+                thirtyRest: false,
+            }
+        
+        case SET_TWENTY_REST:
+            return {
+                ...state, 
+                tenRest: false,
+                fifteenRest: false,
+                twentyRest: true,
+                thirtyRest: false,
+            }
+
+        case SET_THIRTY_REST:
+            return {
+                ...state, 
+                tenRest: false,
+                fifteenRest: false,
+                twentyRest: false,
+                thirtyRest: true,
+            }
+
         default:
             return state
     }

@@ -1,42 +1,32 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { connect } from 'react-redux'
-import { SET_REST_TIME } from '../../../actionTypes/index'
+import { 
+    SET_REST_TIME,
+    SET_TEN_REST,
+    SET_FIFTEEN_REST,
+    SET_TWENTY_REST,
+    SET_THIRTY_REST, 
+} from '../../../actionTypes/index'
 
 function RestTimeButtonGrid(props) {
-    const [ten, setTen] = useState(false)
-    const [fifteen, setFifteen] = useState(false)
-    const [twenty, setTwenty] = useState(false)
-    const [thirty, setThirty] = useState(false)
- 
+   
     const handleTen = (e) => {
-        setTen(true)
-        setFifteen(false)
-        setTwenty(false)
-        setThirty(false)
+        props.setTenRest()
         props.setRestTime(parseInt(e.target.value))
     }
 
     const handleFifteen = (e) => {
-        setTen(false)
-        setFifteen(true)
-        setTwenty(false)
-        setThirty(false)
+        props.setFifteenRest()
         props.setRestTime(parseInt(e.target.value))
     }
 
     const handleTwenty = (e) => {
-        setTen(false)
-        setFifteen(false)
-        setTwenty(true)
-        setThirty(false)
+        props.setTwentyRest()
         props.setRestTime(parseInt(e.target.value))
     }
 
     const handleThirty = (e) => {
-        setTen(false)
-        setFifteen(false)
-        setTwenty(false)
-        setThirty(true)
+        props.setThirtyRest()
         props.setRestTime(parseInt(e.target.value))
     }
 
@@ -44,7 +34,7 @@ function RestTimeButtonGrid(props) {
         <div className="select-time-grid">
                 <button
                     id="ten-rest"
-                    className={ten ? "selected-button" : "select-button"}
+                    className={props.selectedStyles.tenRest ? "selected-button" : "select-button"}
                     onClick={(e) => handleTen(e)}
                     value={10000}
                 >
@@ -53,7 +43,7 @@ function RestTimeButtonGrid(props) {
 
                 <button
                     id="fifteen-rest"
-                    className={fifteen ? "selected-button" : "select-button"}
+                    className={props.selectedStyles.fifteenRest ? "selected-button" : "select-button"}
                     onClick={(e) => handleFifteen(e)}
                     value={15000}
                 >
@@ -62,7 +52,7 @@ function RestTimeButtonGrid(props) {
 
                 <button
                     id="twenty-rest"
-                    className={twenty ? "selected-button" : "select-button"}
+                    className={props.selectedStyles.twentyRest ? "selected-button" : "select-button"}
                     onClick={(e) => handleTwenty(e)}
                     value={20000}
                 >
@@ -71,7 +61,7 @@ function RestTimeButtonGrid(props) {
 
                 <button
                     id="thirty-rest"
-                    className={thirty ? "selected-button" : "select-button"}
+                    className={props.selectedStyles.thirtyRest ? "selected-button" : "select-button"}
                     onClick={(e) => handleThirty(e)}
                     value={30000}
                 >
@@ -82,8 +72,16 @@ function RestTimeButtonGrid(props) {
 
 }
 
-const mapDispatchToProps = dispatch => ({
-    setRestTime: (number) => dispatch({ type: SET_REST_TIME, payload: number })
+const mapStateToProps = state => ({
+    selectedStyles: state.selectedStyles
 })
 
-export default connect(null, mapDispatchToProps)(RestTimeButtonGrid)
+const mapDispatchToProps = dispatch => ({
+    setRestTime: (number) => dispatch({ type: SET_REST_TIME, payload: number }),
+    setTenRest: () => dispatch({ type: SET_TEN_REST}),
+    setFifteenRest: () => dispatch({ type: SET_FIFTEEN_REST}),
+    setTwentyRest: () => dispatch({ type: SET_TWENTY_REST}),
+    setThirtyRest: () => dispatch({ type: SET_THIRTY_REST}),
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(RestTimeButtonGrid)
