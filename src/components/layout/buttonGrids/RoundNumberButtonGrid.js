@@ -7,7 +7,7 @@ import {
 } from '../../../actionTypes'
 import RoundNumberData from '../../../data/roundNumberData.json'
 
-function RoundroundButtonGrid(props) {
+function RoundNumberButtonGrid(props) {
 
     const handleChange = (e) => {
         props.setRoundButtonNumber(e.target.value)
@@ -19,7 +19,6 @@ function RoundroundButtonGrid(props) {
         <div className="select-number-grid">
             {RoundNumberData.map((int, index) => {
                 return (
-                    console.log(props.roundButtonNumber),
                     <button
                         key={int.id}
                         id={int.id}
@@ -45,4 +44,4 @@ const mapDispatchToProps = dispatch => ({
     setRoundButtonNumber: (number) => dispatch({type: SET_ROUND_NUMBER_BUTTON, payload: number })
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(RoundroundButtonGrid)
+export default connect(mapStateToProps, mapDispatchToProps)(RoundNumberButtonGrid)
