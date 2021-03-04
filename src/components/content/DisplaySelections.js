@@ -54,7 +54,7 @@ const mapStateToProps = state => ({
     exerciseTime: state.params.exerciseTime,
     restTime: state.params.restTime,
     numberOfRounds: state.params.numberOfRounds,
-    exercises: state.params.exercises
+    exercises: state.params.exercises,
 })
 
 const mapDispatchToProps = dispatch => ({

@@ -3,15 +3,17 @@ import { connect } from 'react-redux'
 import {
     SET_NUMBER_OF_EXERCISES,
     SET_EXERCISE_ROUNDS,
-    SET_EXERCISE_NUMBER_BUTTON
+    SET_EXERCISE_NUMBER_BUTTON,
+    SET_EXERCISES
 } from '../../../actionTypes'
 import ExerciseNumberData from '../../../data/exerciseNumberData.json'
 
 function ExerciseNumberButtonGrid(props) {
 
     const handleChange = (e) => {
-        props.setExerciseButtonNumber(e.target.value)
+        props.setExerciseNumberButton(e.target.value)
         props.setNumberOfExercises(e.target.value)
+        props.setExercises()
         props.setExerciseRounds()
     }
 
@@ -41,7 +43,8 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
     setNumberOfExercises: (number) => dispatch({ type: SET_NUMBER_OF_EXERCISES, payload: number }),
     setExerciseRounds: () => dispatch({ type: SET_EXERCISE_ROUNDS }),
-    setExerciseButtonNumber: (number) => dispatch({type: SET_EXERCISE_NUMBER_BUTTON, payload: number })
+    setExerciseNumberButton: (number) => dispatch({type: SET_EXERCISE_NUMBER_BUTTON, payload: number }),
+    setExercises: () => dispatch({ type: SET_EXERCISES })
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(ExerciseNumberButtonGrid)
