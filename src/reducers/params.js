@@ -25,7 +25,7 @@ export default (state = {
     switch (action.type) {
 
         case SET_NUMBER_OF_EXERCISES:
-            return { ...state, numberOfExercises: action.payload }
+            return { ...state, numberOfExercises: parseInt(action.payload) }
 
         case SET_EXERCISE_TIME:
             return { ...state, exerciseTime: action.payload }

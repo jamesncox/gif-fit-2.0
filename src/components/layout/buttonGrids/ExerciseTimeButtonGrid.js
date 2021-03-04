@@ -31,7 +31,6 @@ function ExerciseTimeButtonGrid(props) {
             })}       
         </div>
     )
-
 }
 
 const mapStateToProps = state => ({

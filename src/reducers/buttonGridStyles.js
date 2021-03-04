@@ -27,11 +27,10 @@ export default (state = {
             return { ...state, exerciseNumberButton: action.payload }
 
         case SET_EXERCISE_TIME_BUTTON:
-            console.log(action.payload)
             return { 
                 ...state, 
                 exerciseTimeButton: action.payload.value, 
-                exerciseTimeIndex: action.payload.index 
+                exerciseTimeIndex: parseInt(action.payload.index) 
             }
 
         case SET_ROUND_NUMBER_BUTTON:
