@@ -1,6 +1,7 @@
 import {
     CLEAR_BUTTON_GRID_STYLES,
-    SET_ROUND_NUMBER_BUTTON
+    SET_EXERCISE_NUMBER_BUTTON,
+    SET_ROUND_NUMBER_BUTTON,
 } from '../actionTypes'
 
 export default (state = {
@@ -20,8 +21,11 @@ export default (state = {
                 roundNumberButton: null
             }
 
-        case SET_ROUND_NUMBER_BUTTON:
+        case SET_EXERCISE_NUMBER_BUTTON:
             console.log(action.payload)
+            return { ...state, exerciseNumberButton: action.payload }
+
+        case SET_ROUND_NUMBER_BUTTON:
             return { ...state, roundNumberButton: action.payload }
 
         default:
