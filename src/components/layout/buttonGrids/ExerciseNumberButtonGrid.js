@@ -89,7 +89,6 @@ function ExerciseNumberButtonGrid(props) {
     }
 
     return (
-        console.log(props.selectedStyles),
         <div className="select-number-grid">
                 <button
                     id="one-number"
