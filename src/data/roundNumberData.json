@@ -1,0 +1,42 @@
+[
+    {
+        "id": "one-round",
+        "value": 1
+    },
+    {
+        "id": "two-round",
+        "value": 2
+    },
+    {
+        "id": "three-round",
+        "value": 3
+    },
+    {
+        "id": "four-round",
+        "value": 4
+    },
+    {
+        "id": "five-round",
+        "value": 5
+    },
+    {
+        "id": "six-round",
+        "value": 6
+    },
+    {
+        "id": "seven-round",
+        "value": 7
+    },
+    {
+        "id": "eight-round",
+        "value": 8
+    },
+    {
+        "id": "nine-round",
+        "value": 9
+    },
+    {
+        "id": "ten-round",
+        "value": 10
+    }
+]
