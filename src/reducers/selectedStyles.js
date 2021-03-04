@@ -12,10 +12,10 @@ import {
     SET_NINE_EX,
     SET_TEN_EX,
 
-    // SET_TWENTY_EX,
-    // SET_THIRTY_EX,
-    // SET_FORTY_EX,
-    // SET_SIXTY_EX,
+    SET_TWENTY_EX,
+    SET_THIRTY_EX,
+    SET_FORTY_EX,
+    SET_SIXTY_EX,
 
     // SET_TEN_REST,
     // SET_FIFTEEN_REST,
@@ -261,6 +261,42 @@ export default (state = {
                 eightEx: false,
                 nineEx: false,
                 tenEx: true,
+            }
+
+        case SET_TWENTY_EX:
+            return {
+                ...state, 
+                twentyEx: true,
+                thirtyEx: false,
+                fortyEx: false,
+                sixtyEx: false,
+            }
+        
+        case SET_THIRTY_EX:
+            return {
+                ...state, 
+                twentyEx: false,
+                thirtyEx: true,
+                fortyEx: false,
+                sixtyEx: false,
+            }
+
+        case SET_FORTY_EX:
+            return {
+                ...state, 
+                twentyEx: false,
+                thirtyEx: false,
+                fortyEx: true,
+                sixtyEx: false,
+            }
+
+        case SET_SIXTY_EX:
+            return {
+                ...state, 
+                twentyEx: false,
+                thirtyEx: false,
+                fortyEx: false,
+                sixtyEx: true,
             }
 
         default:

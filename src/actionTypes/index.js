@@ -30,6 +30,12 @@ const SET_EIGHT_EX = "SET_EIGHT_EX"
 const SET_NINE_EX = "SET_NINE_EX"
 const SET_TEN_EX = "SET_TEN_EX"
 
+const SET_TWENTY_EX = "SET_TWENTY_EX"
+const SET_THIRTY_EX = "SET_THIRTY_EX"
+const SET_FORTY_EX = "SET_FORTY_EX"
+const SET_SIXTY_EX = "SET_SIXTY_EX"
+
+
 export {
     // Params
     SET_NUMBER_OF_EXERCISES,
@@ -62,4 +68,9 @@ export {
     SET_EIGHT_EX,
     SET_NINE_EX,
     SET_TEN_EX,
+
+    SET_TWENTY_EX,
+    SET_THIRTY_EX,
+    SET_FORTY_EX,
+    SET_SIXTY_EX,
 }
