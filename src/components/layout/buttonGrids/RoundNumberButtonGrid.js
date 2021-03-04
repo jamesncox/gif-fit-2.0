@@ -3,14 +3,14 @@ import { connect } from 'react-redux'
 import {
     SET_NUMBER_OF_ROUNDS,
     SET_EXERCISE_ROUNDS,
+    SET_ROUND_NUMBER_BUTTON
 } from '../../../actionTypes'
 import RoundNumberData from '../../../data/roundNumberData.json'
 
 function RoundroundButtonGrid(props) {
-    const [number, setNumber] = useState(null)
 
     const handleChange = (e) => {
-        setNumber(e.target.value)
+        props.setRoundButtonNumber(e.target.value)
         props.setNumberOfRounds(e.target.value)
         props.setExerciseRounds()
     }
@@ -19,10 +19,11 @@ function RoundroundButtonGrid(props) {
         <div className="select-number-grid">
             {RoundNumberData.map((int, index) => {
                 return (
+                    console.log(props.roundButtonNumber),
                     <button
                         key={int.id}
                         id={int.id}
-                        className={(number - 1) === index ? "selected-button" : "select-button"}
+                        className={(props.roundNumberButton - 1) === index ? "selected-button" : "select-button"}
                         onClick={(e) => handleChange(e)}
                         value={int.value}
                     >
@@ -34,9 +35,14 @@ function RoundroundButtonGrid(props) {
     )
 }
 
-const mapDispatchToProps = dispatch => ({
-    setNumberOfRounds: (number) => dispatch({ type: SET_NUMBER_OF_ROUNDS, payload: number }),
-    setExerciseRounds: () => dispatch({ type: SET_EXERCISE_ROUNDS })
+const mapStateToProps = state => ({
+    roundNumberButton: state.buttonGridStyles.roundNumberButton
 })
 
-export default connect(null, mapDispatchToProps)(RoundroundButtonGrid)
+const mapDispatchToProps = dispatch => ({
+    setNumberOfRounds: (number) => dispatch({ type: SET_NUMBER_OF_ROUNDS, payload: number }),
+    setExerciseRounds: () => dispatch({ type: SET_EXERCISE_ROUNDS }),
+    setRoundButtonNumber: (number) => dispatch({type: SET_ROUND_NUMBER_BUTTON, payload: number })
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(RoundroundButtonGrid)
