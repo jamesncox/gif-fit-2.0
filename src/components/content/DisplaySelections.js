@@ -26,7 +26,7 @@ function DisplaySelections(props) {
             <p className="display-selection-title">
                 Your Workout
                 {props.numberOfExercises && props.exerciseTime && props.restTime && props.numberOfRounds ? <button className="workout-btn">GO</button> : null}
-                {props.numberOfExercises || props.exerciseTime || props.restTime || props.numberOfRounds ? <button className="workout-btn" onClick={handleClearParams}>CLEAR</button> : null}
+                {props.numberOfExercises && props.exerciseTime && props.restTime && props.numberOfRounds ? <button className="workout-btn" onClick={handleClearParams}>CLEAR</button> : null}
             </p>
             {props.numberOfExercises ? <p className="display-selection-description">Exercises: {props.numberOfExercises} </p> : null}
             <ul className="display-selection-description">
