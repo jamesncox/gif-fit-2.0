@@ -17,10 +17,10 @@ import {
     SET_FORTY_EX,
     SET_SIXTY_EX,
 
-    // SET_TEN_REST,
-    // SET_FIFTEEN_REST,
-    // SET_TWENTY_REST,
-    // SET_THIRTY_REST,
+    SET_TEN_REST,
+    SET_FIFTEEN_REST,
+    SET_TWENTY_REST,
+    SET_THIRTY_REST,
 
     // SET_ONE_ROUND,
     // SET_TWO_ROUND,
