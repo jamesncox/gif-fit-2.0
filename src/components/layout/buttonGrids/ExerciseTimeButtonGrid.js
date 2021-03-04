@@ -20,10 +20,9 @@ function ExerciseTimeButtonGrid(props) {
                     <button
                         key={int.id}
                         id={int.id}
-                        className={props.exerciseTimeIndex === index ? "selected-button" : "select-button"}
+                        className={props.exerciseTimeButton.id === int.id ? "selected-button" : "select-button"}
                         onClick={(e) => handleChange(e)}
                         value={int.value}
-                        index={int.index}
                     >
                         {int.text}
                     </button>
@@ -39,7 +38,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
     setExerciseTime: (number) => dispatch({ type: SET_EXERCISE_TIME, payload: number }),
-    setExerciseTimeButton: (target) => dispatch({ type: SET_EXERCISE_TIME_BUTTON, payload: target })
+    setExerciseTimeButton: (number) => dispatch({ type: SET_EXERCISE_TIME_BUTTON, payload: number })
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(ExerciseTimeButtonGrid)
