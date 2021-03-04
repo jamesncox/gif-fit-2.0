@@ -20,6 +20,7 @@ function ExerciseTimeButtonGrid(props) {
                     <button
                         key={int.id}
                         id={int.id}
+                        // cannot read property of "null" exerciseTimeButton.id when nothing selected yet
                         className={props.exerciseTimeButton.id === int.id ? "selected-button" : "select-button"}
                         onClick={(e) => handleChange(e)}
                         value={int.value}
