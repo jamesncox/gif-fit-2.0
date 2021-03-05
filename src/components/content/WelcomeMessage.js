@@ -1,5 +1,7 @@
 import React from 'react'
+import ImageLoad from '../../hooks/ImageLoad'
 import PeopleFitnessImage from '../../assets/images/people-fitness.png'
+import PeopleFitnessTinyImage from '../../assets/images/people-fitness-tiny.png'
 
 function WelcomeMessage(props) {
     return (
@@ -13,9 +15,10 @@ function WelcomeMessage(props) {
                 <li>Number of rounds</li>
             </ul>
             <p className="welcome-description">GIF FIT recommends resting for half the time you exercise (adhering to the Tabata Method). But you can choose any rest time to make a workout more or less challenging.</p>
-            <img 
+            <ImageLoad
                 className="fitness-image"
-                src={PeopleFitnessImage} 
+                src={PeopleFitnessImage}
+                placeholder={PeopleFitnessTinyImage}
                 alt="Animation of people of different backgrounds holding workout equipment" 
             />
         </div>
