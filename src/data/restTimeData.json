@@ -1,0 +1,22 @@
+[
+    {
+        "id": "twenty-exercise",
+        "value": 10000,
+        "text": "10 sec"
+    },
+    {
+        "id": "thirty-exercise",
+        "value": 15000,
+        "text": "15 sec"
+    },
+    {
+        "id": "forty-exercise",
+        "value": 20000,
+        "text": "20 sec"
+    },
+    {
+        "id": "sixty-exercise",
+        "value": 30000,
+        "text": "30 sec"
+    }
+]
