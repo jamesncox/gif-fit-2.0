@@ -50,6 +50,16 @@ function TopNav(props) {
                     </div>
                 </div>
 
+                <div className="dropdown">
+                    <button className="dropbtn">
+                        OPTIONS
+                        <i className="fa fa-caret-down"></i>
+                    </button>
+                    <div className="dropdown-content">
+                        <RoundNumberButtonGrid />
+                    </div>
+                </div>
+
                 <a href="#" className="index">INDEX</a>
             </div>
         </div>
