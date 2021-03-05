@@ -56,7 +56,7 @@ function TopNav(props) {
                         <i className="fa fa-caret-down"></i>
                     </button>
                     <div className="dropdown-content">
-                        <RoundNumberButtonGrid />
+                       <RestTimeButtonGrid />
                     </div>
                 </div>
 
