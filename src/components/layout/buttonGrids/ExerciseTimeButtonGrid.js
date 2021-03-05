@@ -15,7 +15,7 @@ function ExerciseTimeButtonGrid(props) {
 
     return (
         <div className="select-time-grid">
-               {ExerciseTimeData.map((int, index) => {
+               {ExerciseTimeData.map( int => {
                 return (
                     <button
                         key={int.id}

@@ -2,6 +2,7 @@ import {
     CLEAR_BUTTON_GRID_STYLES,
     SET_EXERCISE_NUMBER_BUTTON,
     SET_EXERCISE_TIME_BUTTON,
+    SET_REST_TIME_BUTTON,
     SET_ROUND_NUMBER_BUTTON,
 } from '../actionTypes'
 
@@ -27,12 +28,10 @@ export default (state = {
             return { ...state, exerciseNumberButton: action.payload }
 
         case SET_EXERCISE_TIME_BUTTON:
-            console.log(action.payload)
-            return { 
-                ...state, 
-                exerciseTimeButton: parseInt(action.payload), 
-                // exerciseTimeIndex: action.payload
-            }
+            return { ...state, exerciseTimeButton: parseInt(action.payload) }
+
+        case SET_REST_TIME_BUTTON:
+            return { ...state, restTimeButton: parseInt(action.payload) }
 
         case SET_ROUND_NUMBER_BUTTON:
             return { ...state, roundNumberButton: action.payload }
