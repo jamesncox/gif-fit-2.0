@@ -10,7 +10,7 @@ function ExerciseTimeButtonGrid(props) {
 
     const handleChange = (e) => {
         props.setExerciseTime(e.target.value)
-        props.setExerciseTimeButton(e.target)
+        props.setExerciseTimeButton(e.target.value)
     }
 
     return (
@@ -21,7 +21,7 @@ function ExerciseTimeButtonGrid(props) {
                         key={int.id}
                         id={int.id}
                         // cannot read property of "null" exerciseTimeButton.id when nothing selected yet
-                        className={props.exerciseTimeButton.id === int.id ? "selected-button" : "select-button"}
+                        className={props.exerciseTimeButton === int.value ? "selected-button" : "select-button"}
                         onClick={(e) => handleChange(e)}
                         value={int.value}
                     >

@@ -30,7 +30,7 @@ export default (state = {
             console.log(action.payload)
             return { 
                 ...state, 
-                exerciseTimeButton: action.payload, 
+                exerciseTimeButton: parseInt(action.payload), 
                 // exerciseTimeIndex: action.payload
             }
 
