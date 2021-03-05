@@ -58,7 +58,7 @@ background-size: cover;
   flex-direction: column;
   background-color: var(--blue);
   /* width: 80%; */
-  min-height: 545px;
+  min-height: 550px;
   padding: 2rem;
   border-radius: 32px;
   margin: 1rem;
