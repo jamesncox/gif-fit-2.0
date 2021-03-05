@@ -6,7 +6,6 @@
     background-color: var(--dark-purple);
     color: var(--white);
     min-height: 70px;
-    /* overflow: hidden; */
     font-family: var(--prompt);
 }
 
