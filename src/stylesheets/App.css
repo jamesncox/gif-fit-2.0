@@ -25,13 +25,14 @@ background-size: cover;
   --off-white: rgb(245, 245, 245);
 
   /* purples */
+  --purple: rgba(172, 207, 255, 0.733);
   --dark-purple: rgb(68, 9, 204);
   --dark-purple-50-opacity: rgba(51, 8, 150, 0.7);
   --medium-purple: rgb(202, 180, 253);
 
   /* blues */
   --sea-blue: rgb(22, 239, 255);
-  --blue: #2476c4;
+  --blue: #1a428dec;
 
   /* transition */
  --theme-transition: background-color .4s ease-in-out, color .4s ease-in-out;
@@ -55,65 +56,78 @@ background-size: cover;
 .welcome-message-wrapper {
   display: flex;
   flex-direction: column;
+  background-color: var(--blue);
+  /* width: 80%; */
+  min-height: 545px;
+  padding: 2rem;
+  border-radius: 32px;
+  margin: 1rem;
 }
 
 .welcome-title {
-  color: var(--blue);
+  color: var(--white);
   font-size: 1.5rem;
   padding-bottom: 8px;
-  border-bottom: 1px solid var(--blue);
-  width: 75%;
+  border-bottom: 1px solid var(--white);
+  width: 100%;
 }
 
 .welcome-description {
   font-family: var(--sans-pro);
   margin-top: -.25rem;
-  color: var(--blue);
+  color: var(--white);
   font-size: 1.1rem;
-  width: 75%;
+  width: 100%;
 }
 
 /* DisplaySelections.js */
 .display-selection-wrapper {
   display: flex;
   flex-direction: column;
+  background-color: var(--purple);
+  /* width: 80%; */
+  padding: 2rem;
+  border-radius: 32px;
+  margin: 1rem;
 }
 
 .display-selection-title {
-  color: var(--dark-purple-50-opacity);
+  color: var(--blue);
   font-size: 1.5rem;
+  /* font-weight: bold; */
   padding-bottom: 8px;
-  border-bottom: 1px solid var(--dark-purple-50-opacity);
+  border-bottom: 1px solid var(--blue);
   width: 50%;
 }
 
 .display-selection-description {
   font-family: var(--sans-pro);
+  /* font-weight: bold; */
   margin-top: -.25rem;
-  color: var(--dark-purple-50-opacity);
+  color: var(--blue);
   font-size: 1.1rem;
 }
 
 .display-selection-time {
-  color: var(--dark-purple-50-opacity);
+  color: var(--blue);
   font-size: 1.5rem;
   padding-top: 8px;
-  border-top: 1px solid var(--dark-purple-50-opacity);
+  border-top: 2px solid var(--blue);
   width: 50%;
 }
 
 .workout-btn {
   font-family: var(--sans-pro);
-  background-color: var(--medium-purple);
-  color: var(--dark-purple);
+  background-color: var(--blue);
+  color: var(--white);
   margin-left: 1rem;
   font-size: 1rem;
   border: none;
-  border-bottom: 2px solid var(--dark-purple);
+  border-bottom: 2px solid var(--purple);
   border-radius: 5px;
   cursor: pointer;
 }
 
 .workout-btn:hover {
-  background-color: var(--sea-blue);
+  background-color: var(--medium-purple);
 }
