@@ -25,7 +25,6 @@ background-size: cover;
   --off-white: rgb(245, 245, 245);
 
   /* purples */
-  --purple: rgba(172, 207, 255, 0.733);
   --dark-purple: rgb(68, 9, 204);
   --dark-purple-50-opacity: rgba(51, 8, 150, 0.7);
   --medium-purple: rgb(202, 180, 253);
@@ -33,6 +32,8 @@ background-size: cover;
   /* blues */
   --sea-blue: rgb(22, 239, 255);
   --blue: #1a428dec;
+  --light-blue: rgba(172, 207, 255);
+  --light-blue-opacity-75: rgba(172, 207, 255, 0.75);
 
   /* transition */
  --theme-transition: background-color .4s ease-in-out, color .4s ease-in-out;
@@ -90,7 +91,7 @@ background-size: cover;
 .display-selection-wrapper {
   display: flex;
   flex-direction: column;
-  background-color: var(--purple);
+  background-color: var(--light-blue-opacity-75);
   /* width: 80%; */
   padding: 2rem;
   border-top-right-radius: 32px;

@@ -13,7 +13,7 @@
 /* GIF FIT header */
 .title {
     float: left;
-    color: var(--sea-blue);
+    color: var(--light-blue);
     margin-top: 14px;
     margin-bottom: -1rem;
     margin-left: 2rem;
@@ -36,7 +36,7 @@
     color: var(--white);
     padding: 1rem 1rem;
     text-decoration: none;
-    border-left: 2px solid var(--sea-blue);
+    border-left: 2px solid var(--light-blue);
 }
 
 /* The dropdown container */
@@ -62,7 +62,7 @@
 
 /* Add a red background color to navbar links on hover */
 .top-nav a:hover, .dropdown:hover .dropbtn {
-    background-color: var(--sea-blue);
+    background-color: var(--light-blue);
     color: var(--dark-purple);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
