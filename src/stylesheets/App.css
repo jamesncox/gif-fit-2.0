@@ -80,6 +80,11 @@ background-size: cover;
   width: 100%;
 }
 
+.fitness-image {
+  width: 50%;
+  margin: auto;
+}
+
 /* DisplaySelections.js */
 .display-selection-wrapper {
   display: flex;
