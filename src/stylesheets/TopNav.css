@@ -5,7 +5,7 @@
     left: 0;
     background-color: var(--dark-purple);
     color: var(--white);
-    min-height: 88px;
+    min-height: 70px;
     /* overflow: hidden; */
     font-family: var(--prompt);
 }
@@ -14,7 +14,7 @@
 .title {
     float: left;
     color: var(--sea-blue);
-    margin-top: 33px;
+    margin-top: 14px;
     margin-bottom: -1rem;
     margin-left: 2rem;
     margin-right: 1rem;
@@ -30,7 +30,7 @@
 
 /* index */
 .index {
-    margin-top: 2rem;
+    margin-top: 14px;
     font-size: 1rem;
     font-weight: bold;
     color: var(--white);
@@ -43,7 +43,7 @@
 .dropdown {
     float: left;
     overflow: hidden;
-    margin-top: 2rem;
+    margin-top: 14px;
 }
 
 /* Dropdown button */
