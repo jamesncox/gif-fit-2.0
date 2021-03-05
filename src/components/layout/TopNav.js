@@ -3,6 +3,7 @@ import ExerciseNumberButtonGrid from './buttonGrids/ExerciseNumberButtonGrid'
 import ExerciseTimeButtonGrid from './buttonGrids/ExerciseTimeButtonGrid'
 import RestTimeButtonGrid from './buttonGrids/RestTimeButtonGrid'
 import RoundNumberButtonGrid from './buttonGrids/RoundNumberButtonGrid'
+import DumbbellButtonGrid from './buttonGrids/DumbbellButtonGrid'
 
 function TopNav(props) {
     return (
@@ -52,11 +53,11 @@ function TopNav(props) {
 
                 <div className="dropdown">
                     <button className="dropbtn">
-                        OPTIONS
+                        DUMBBELLS?
                         <i className="fa fa-caret-down"></i>
                     </button>
                     <div className="dropdown-content">
-                       <RestTimeButtonGrid />
+                       <DumbbellButtonGrid />
                     </div>
                 </div>
 
