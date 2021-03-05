@@ -31,7 +31,7 @@
 .index {
     margin-top: 14px;
     font-size: 1rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     color: var(--white);
     padding: 1rem 1rem;
     text-decoration: none;
@@ -49,7 +49,6 @@
 .dropdown .dropbtn {
     cursor: pointer;
     font-size: 1rem;
-    font-weight: bold;
     border: none;
     outline: none;
     color: var(--white);
@@ -63,6 +62,7 @@
 .top-nav a:hover, .dropdown:hover .dropbtn {
     background-color: var(--light-blue);
     color: var(--dark-purple);
+    font-weight: bold;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
