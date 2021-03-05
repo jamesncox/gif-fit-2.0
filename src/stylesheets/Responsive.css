@@ -46,6 +46,10 @@
         margin: 0;
     }
 
+    .welcome-message-wrapper {
+        border-radius: 0;
+    }
+
     .welcome-title {
         width: 100%;
     }
@@ -53,6 +57,10 @@
     .welcome-description {
         width: 100%;
     }
+
+    .fitness-image {
+        width: 75%;
+      }
 
     .display-selection-title {
         width: 100%;
