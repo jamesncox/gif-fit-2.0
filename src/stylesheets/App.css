@@ -60,8 +60,9 @@ background-size: cover;
   /* width: 80%; */
   min-height: 550px;
   padding: 2rem;
-  border-radius: 32px;
-  margin: 1rem;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
+  margin: .5rem;
 }
 
 .welcome-title {
@@ -92,8 +93,9 @@ background-size: cover;
   background-color: var(--purple);
   /* width: 80%; */
   padding: 2rem;
-  border-radius: 32px;
-  margin: 1rem;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+  margin: .5rem;
 }
 
 .display-selection-title {
