@@ -5,7 +5,8 @@
     left: 0;
     background-color: var(--dark-purple);
     color: var(--white);
-    overflow: hidden;
+    min-height: 88px;
+    /* overflow: hidden; */
     font-family: var(--prompt);
 }
 
