@@ -107,6 +107,14 @@ body {
   width: 50%;
 }
 
+.display-selection-category {
+  font-family: var(--sans-pro);
+  font-weight: bold;
+  /* margin-top: -.25rem; */
+  color: var(--blue);
+  font-size: 1.1rem;
+}
+
 .display-selection-description {
   font-family: var(--sans-pro);
   /* font-weight: bold; */
@@ -130,7 +138,6 @@ body {
   margin-left: 1rem;
   font-size: 1rem;
   border: none;
-  /* border-bottom: 2px solid var(--medium-purple); */
   border-radius: 5px;
   cursor: pointer;
 }
@@ -139,7 +146,6 @@ body {
   background-color: var(--white);
   color: var(--blue);
   font-weight: bold;
-  /* border-bottom: 2px solid var(--blue); */
 }
 
 /* Preview Gif Grid */
@@ -172,8 +178,6 @@ body {
   font-family: var(--sans-pro);
   color: var(--blue);
   font-size: 12px;
-  /* padding-left: 2px;
-  padding-right: 2px; */
   text-align: center;
   margin-top: 0;
 }

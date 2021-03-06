@@ -33,15 +33,12 @@ function DisplaySelections(props) {
                 {props.numberOfExercises || props.exerciseTime || props.restTime || props.numberOfRounds ? <button className="workout-btn" onClick={handleClearParams}>CLEAR</button> : null}
                 {props.numberOfExercises && props.exerciseTime && props.restTime && props.numberOfRounds ? <button className="workout-btn">GO !</button> : null}
             </p>
-            {props.numberOfExercises ? <p className="display-selection-description">EXERCISES</p> : null}
+            {props.numberOfExercises ? <p className="display-selection-category" style={{marginTop: "-.25rem"}}>EXERCISES</p> : null}
             <PreviewGifGrid />
-            {/* <ul className="display-selection-description">
-                {props.exercises.map(exercise => {
-                    return <li key={exercise.id}>{exercise.name}</li>
-                })}
-            </ul> */}
-            {props.exerciseTime ? <p className="display-selection-description">Exercise Time: {props.exerciseTime / 1000} seconds</p> : null}
-            {props.restTime ? <p className="display-selection-description">Rest Time: {props.restTime / 1000} seconds</p> : null}
+            {props.exerciseTime ? <p className="display-selection-category">EXERCISE TIME</p> : null}
+            {props.exerciseTime ? <p className="display-selection-description">{props.exerciseTime / 1000} seconds</p> : null}
+            {props.restTime ? <p className="display-selection-category">Rest Time</p> : null}
+            {props.restTime ? <p className="display-selection-description">{props.restTime / 1000} seconds</p> : null}
             {props.numberOfRounds ? <p className="display-selection-description">Number of Rounds: {props.numberOfRounds}</p> : null}
             {props.numberOfExercises && props.exerciseTime && props.restTime && props.numberOfRounds ? <p className="display-selection-time">TOTAL TIME: {calculateTotalTime()}</p> : null}
         </div>
