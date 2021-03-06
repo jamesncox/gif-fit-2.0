@@ -24,7 +24,7 @@ function ExerciseNumberButtonGrid(props) {
                     <button
                         key={int.id}
                         id={int.id}
-                        className={(props.exerciseNumberButton - 1) === index ? "selected-button" : "select-button"}
+                        className={props.exerciseNumberButton === int.value ? "selected-button" : "select-button"}
                         onClick={(e) => handleChange(e)}
                         value={int.value}
                     >

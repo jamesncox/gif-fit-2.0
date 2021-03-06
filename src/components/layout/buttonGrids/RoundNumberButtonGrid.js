@@ -22,10 +22,10 @@ function RoundNumberButtonGrid(props) {
                     <button
                         key={int.id}
                         id={int.id}
-                        className={(props.roundNumberButton - 1) === index ? "selected-button" : "select-button"}
+                        className={props.roundNumberButton === int.value ? "selected-button" : "select-button"}
                         onClick={(e) => handleChange(e)}
                         value={int.value}
-                        disable={(props.roundNumberButton - 1) === index}
+                        disable={props.roundNumberButton === int.value}
                     >
                         {int.value}
                     </button>

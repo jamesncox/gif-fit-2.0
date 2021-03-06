@@ -25,7 +25,7 @@ export default (state = {
             }
 
         case SET_EXERCISE_NUMBER_BUTTON:
-            return { ...state, exerciseNumberButton: action.payload }
+            return { ...state, exerciseNumberButton: parseInt(action.payload) }
 
         case SET_EXERCISE_TIME_BUTTON:
             return { ...state, exerciseTimeButton: parseInt(action.payload) }
@@ -34,7 +34,7 @@ export default (state = {
             return { ...state, restTimeButton: parseInt(action.payload) }
 
         case SET_ROUND_NUMBER_BUTTON:
-            return { ...state, roundNumberButton: action.payload }
+            return { ...state, roundNumberButton: parseInt(action.payload) }
 
         default:
             return state
