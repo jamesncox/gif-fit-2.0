@@ -33,6 +33,7 @@
     background: none;
     color: lightgray;
     cursor: pointer;
+    outline: none;
   }
 
   .modal-close:hover {
