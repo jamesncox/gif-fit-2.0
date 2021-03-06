@@ -34,6 +34,7 @@ function DumbbellButtonGrid(props) {
                         id="yes-dumbbells"
                         className={yes ? "selected-button" : "select-button"}
                         onClick={(e) => handleYes(e)}
+                        disabled={yes}
                     >
                         YES
                     </button>
@@ -42,6 +43,7 @@ function DumbbellButtonGrid(props) {
                         id="no-dumbbells"
                         className={no ? "selected-button" : "select-button"}
                         onClick={(e) => handleNo(e)}
+                        disabled={no}
                     >
                         NO
                     </button>
