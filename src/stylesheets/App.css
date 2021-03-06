@@ -91,7 +91,6 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--light-blue-opacity-75);
-  /* width: 80%; */
   padding: 2rem;
   border-top-right-radius: 75px;
   border-bottom-right-radius: 75px;
@@ -101,7 +100,6 @@ body {
 .display-selection-title {
   color: var(--blue);
   font-size: 1.5rem;
-  /* font-weight: bold; */
   padding-bottom: 8px;
   border-bottom: 1px solid var(--blue);
   width: 50%;
@@ -160,11 +158,12 @@ body {
   border: 1px solid var(--blue);
   border-radius: 5px;
   padding: 5px;
+  cursor: pointer;
 }
 
-.preview-gif-card:hover {
-  transform: scale(2.5);
-}
+/* .preview-gif-card:hover {
+  transform: scale(2.25);
+} */
 
 .preview-gifs-gif {
   border-top-left-radius: 5px;
