@@ -9,7 +9,7 @@ function PreviewGifGrid(props) {
         <div className="preview-gif-grid-wrapper">
             {props.exercises.map (exercise => {
                 return (
-                    <div className="preview-gif-card">
+                    <div  key={exercise.id} className="preview-gif-card">
                         <ImageLoad
                             className="preview-gifs-gif"
                             src={exercise.gif}
