@@ -155,7 +155,7 @@ body {
 
 .preview-gif-card {
   background-color: white;
-  border: 1px solid var(--blue);
+  /* border: 1px solid var(--blue); */
   border-radius: 5px;
   padding: 5px;
   cursor: pointer;

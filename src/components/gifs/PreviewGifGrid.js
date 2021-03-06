@@ -12,6 +12,7 @@ function PreviewGifGrid(props) {
             {props.exercises.map (exercise => {
                 return (
                     <Modal
+                        key={exercise.id}
                         activator={({ setShow }) => (
                             <div  key={exercise.id} className="preview-gif-card"  onClick={() => setShow(true)}>
                                 <ImageLoad
