@@ -23,7 +23,7 @@ function ExerciseTimeButtonGrid(props) {
                         className={props.exerciseTimeButton === int.value ? "selected-button" : "select-button"}
                         onClick={(e) => handleChange(e)}
                         value={int.value}
-                         disabled={props.exerciseTimeButton === int.value}
+                        // disabled={props.exerciseTimeButton === int.value ? true : false}
                     >
                         {int.text}
                     </button>
