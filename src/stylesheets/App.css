@@ -161,10 +161,6 @@ body {
   cursor: pointer;
 }
 
-/* .preview-gif-card:hover {
-  transform: scale(2.25);
-} */
-
 .preview-gifs-gif {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;

@@ -1,4 +1,4 @@
-import './styles/transitions.css'
+import '../stylesheets/Modal.css'
 
 import React, { useState } from 'react'
 import { CSSTransition } from 'react-transition-group'
@@ -15,7 +15,7 @@ const Modal = ({ children, activator }) => {
           type="button"
           onClick={() => setShow(false)}
         >
-          X
+          &times;
         </button>
         <div className="modal-body">{children}</div>
       </div>
