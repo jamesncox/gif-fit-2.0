@@ -58,7 +58,7 @@ body {
   flex-direction: column;
   background-color: var(--blue);
   /* width: 80%; */
-  min-height: 600px;
+  min-height: 620px;
   padding: 2rem;
   border-top-left-radius: 75px;
   border-bottom-left-radius: 75px;
@@ -110,15 +110,15 @@ body {
 .display-selection-category {
   font-family: var(--sans-pro);
   font-weight: bold;
-  /* margin-top: -.25rem; */
+  margin-bottom: 4px;
   color: var(--blue);
   font-size: 1.1rem;
 }
 
 .display-selection-description {
   font-family: var(--sans-pro);
-  /* font-weight: bold; */
   margin-top: -.25rem;
+  margin-bottom: -4px;
   color: var(--blue);
   font-size: 1.1rem;
 }

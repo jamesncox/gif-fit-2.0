@@ -39,7 +39,8 @@ function DisplaySelections(props) {
             {props.exerciseTime ? <p className="display-selection-description">{props.exerciseTime / 1000} seconds</p> : null}
             {props.restTime ? <p className="display-selection-category">Rest Time</p> : null}
             {props.restTime ? <p className="display-selection-description">{props.restTime / 1000} seconds</p> : null}
-            {props.numberOfRounds ? <p className="display-selection-description">Number of Rounds: {props.numberOfRounds}</p> : null}
+            {props.numberOfRounds ? <p className="display-selection-category">Number of Rounds</p> : null}
+            {props.numberOfRounds ? <p className="display-selection-description">{props.numberOfRounds}</p> : null}
             {props.numberOfExercises && props.exerciseTime && props.restTime && props.numberOfRounds ? <p className="display-selection-time">TOTAL TIME: {calculateTotalTime()}</p> : null}
         </div>
     )
