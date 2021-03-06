@@ -60,20 +60,46 @@
 
     .fitness-image {
         width: 75%;
-      }
-
-    .display-selection-title {
-        width: 100%;
     }
 
     .display-selection-description {
         width: 100%;
     }
 
+    .preview-gif-grid-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media only screen and (max-width: 1400px) {
+    .preview-gif-grid-wrapper {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .display-selection-title {
+        width: 75%;
+    }
+
+    .display-selection-time {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .display-selection-title {
+        width: 100%;
+    }
+
     .display-selection-time {
         width: 100%;
     }
-    
+}
+
+@media only screen and (max-width: 950px) {
+    .preview-gif-grid-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 @media only screen and (min-width: 800px) {
