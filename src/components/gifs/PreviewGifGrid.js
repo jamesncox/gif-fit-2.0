@@ -31,7 +31,8 @@ function PreviewGifGrid(props) {
                                 alt={exercise.name}
                                 onClick={() => setShow(true)}
                         /> 
-                        <p className="modal-gif-text">{exercise.name}</p>                        
+                        <p className="modal-gif-title">{exercise.name}</p>
+                        <p className="modal-gif-text">{exercise.description}</p>                    
                     </Modal>
                 )
             })}
