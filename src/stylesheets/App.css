@@ -177,3 +177,26 @@ body {
   text-align: center;
   margin-top: 0;
 }
+
+/* Workout Page */
+.display-timers-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-blue);
+  min-height: 645px;
+  padding: 2rem;
+  border-top-left-radius: 75px;
+  border-bottom-left-radius: 75px;
+  margin: .5rem;
+}
+
+.display-gif-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--blue);
+  min-height: 645px;
+  padding: 2rem;
+  border-top-right-radius: 75px;
+  border-bottom-right-radius: 75px;
+  margin: .5rem;
+}
