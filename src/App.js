@@ -14,6 +14,7 @@ import {
 import TopNav from './components/layout/TopNav'
 import SideNav from './components/layout/SideNav'
 import Home from './components/layout/Home'
+import Workout from './components/layout/Workout'
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/workout">
+            <Workout />
           </Route>
         </Switch>
       </div>

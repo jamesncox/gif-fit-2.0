@@ -1,6 +1,10 @@
 import React from 'react'
 
-function Workout(props) {
+function Workout(props) { 
+
+    return (
+        null
+    )
 
 }
 
