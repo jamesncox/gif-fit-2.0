@@ -1,15 +1,21 @@
 import React from 'react'
+import {connect } from 'react-redux'
 import ExerciseNumberButtonGrid from './buttonGrids/ExerciseNumberButtonGrid'
 import ExerciseTimeButtonGrid from './buttonGrids/ExerciseTimeButtonGrid'
 import RestTimeButtonGrid from './buttonGrids/RestTimeButtonGrid'
 import RoundNumberButtonGrid from './buttonGrids/RoundNumberButtonGrid'
 import DumbbellButtonGrid from './buttonGrids/DumbbellButtonGrid'
+import isActive from '../../reducers/isActive'
 
 function TopNav(props) {
     return (
         <div className="top-nav">
             <h1 className="title">GIF FIT</h1>
 
+        {props.isActive 
+            ? 
+            <p className="good-luck">GOOD LUCK!</p> 
+            : 
             <div className="nav-flex-wrapper">
                 <div className="dropdown">
                     <button className="dropbtn">
@@ -62,9 +68,13 @@ function TopNav(props) {
                 </div>
 
                 <a href="#" className="index">INDEX</a>
-            </div>
+            </div>}
         </div>
     )
 }
 
-export default TopNav
+const mapStateToProps = state => ({
+    isActive: state.isActive.isActive
+})
+
+export default connect(mapStateToProps)(TopNav)
