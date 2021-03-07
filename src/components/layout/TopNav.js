@@ -5,7 +5,6 @@ import ExerciseTimeButtonGrid from './buttonGrids/ExerciseTimeButtonGrid'
 import RestTimeButtonGrid from './buttonGrids/RestTimeButtonGrid'
 import RoundNumberButtonGrid from './buttonGrids/RoundNumberButtonGrid'
 import DumbbellButtonGrid from './buttonGrids/DumbbellButtonGrid'
-import isActive from '../../reducers/isActive'
 
 function TopNav(props) {
     return (
@@ -14,7 +13,8 @@ function TopNav(props) {
 
         {props.isActive 
             ? 
-            <p className="good-luck">GOOD LUCK!</p> 
+            <p className="good-luck">Enjoy your workout and don't forget to sweat!</p> 
+            // null
             : 
             <div className="nav-flex-wrapper">
                 <div className="dropdown">

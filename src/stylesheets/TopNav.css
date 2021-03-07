@@ -94,3 +94,14 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* Good Luck Message */
+
+.good-luck {
+    text-align: center;
+    font-family: var(--ubuntu);
+    font-size: 1.5rem;
+    color: var(--light-blue);
+    padding-top: 27px;
+    margin-top: 0;
+}

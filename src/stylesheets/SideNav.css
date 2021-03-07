@@ -53,6 +53,7 @@
 }
 
 .hamburger {
+  position: sticky;
   margin-left: 2rem;
   cursor: pointer;
   font-size: 2rem;
@@ -62,6 +63,7 @@
 }
 
 .sidenav-title {
+  position: sticky;
   margin-top: 12px;
   margin-left: 1rem;
   color: var(--sea-blue);

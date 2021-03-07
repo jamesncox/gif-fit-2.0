@@ -60,7 +60,7 @@ body {
   min-height: 645px;
   padding: 2rem;
   border-top-left-radius: 75px;
-  border-bottom-left-radius: 75px;
+  /* border-bottom-left-radius: 75px; */
   margin: .5rem;
 }
 
@@ -91,7 +91,7 @@ body {
   flex-direction: column;
   background-color: var(--light-blue-opacity-75);
   padding: 2rem;
-  border-top-right-radius: 75px;
+  /* border-top-right-radius: 75px; */
   border-bottom-right-radius: 75px;
   margin: .5rem;
 }
