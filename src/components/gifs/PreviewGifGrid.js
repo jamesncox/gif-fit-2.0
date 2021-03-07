@@ -5,7 +5,7 @@ import FitnessPreviewImage from '../../assets/images/fitness-preview.png'
 import Modal from '../../hooks/Modal'
 
 function PreviewGifGrid(props) {
-    const [show, setShow] = useState(false)
+    const [, setShow] = useState(false)
 
     return (
         <div className="preview-gif-grid-wrapper">
