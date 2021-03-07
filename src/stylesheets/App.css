@@ -182,7 +182,7 @@ body {
 .display-timers-wrapper {
   display: flex;
   flex-direction: column;
-  background-color: var(--light-blue);
+  background-color: var(--blue);
   min-height: 645px;
   padding: 2rem;
   border-top-left-radius: 75px;
@@ -193,7 +193,7 @@ body {
 .display-gif-wrapper {
   display: flex;
   flex-direction: column;
-  background-color: var(--blue);
+  background-color: var(--light-blue);
   min-height: 645px;
   padding: 2rem;
   border-top-right-radius: 75px;
