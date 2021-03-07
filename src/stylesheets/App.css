@@ -57,7 +57,6 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--blue);
-  /* width: 80%; */
   min-height: 645px;
   padding: 2rem;
   border-top-left-radius: 75px;

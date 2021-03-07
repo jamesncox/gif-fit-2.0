@@ -43,13 +43,13 @@
   .modal-body {
     padding: 1rem;
     padding-top: 3rem;
-    border-radius: 10px;
+    border-radius: 2px;
     background-color: white;
   }
 
 /* Modal Gif Styles */
 .modal-gifs-gif {
-  border-radius: 10px;
+  border-radius: 2px;
   width: 100%;
 }
 
