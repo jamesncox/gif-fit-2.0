@@ -53,7 +53,7 @@ function TopNav(props) {
 
                 <div className="dropdown">
                     <button className="dropbtn">
-                        DUMBBELLS?
+                        DUMBBELLS
                         <i className="fa fa-caret-down"></i>
                     </button>
                     <div className="dropdown-content">
