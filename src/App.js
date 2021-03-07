@@ -13,8 +13,8 @@ import {
 
 import TopNav from './components/layout/TopNav'
 import SideNav from './components/layout/SideNav'
-import Home from './components/layout/Home'
-import Workout from './components/layout/Workout'
+import Home from './components/home/Home'
+import Workout from './components/workout/Workout'
 
 function App() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
-import WelcomeMessage from '../content/WelcomeMessage'
-import DisplaySelections from '../content/DisplaySelections'
+import WelcomeMessage from './WelcomeMessage'
+import DisplaySelections from './DisplaySelections'
 
 function Home(props) {
     return (

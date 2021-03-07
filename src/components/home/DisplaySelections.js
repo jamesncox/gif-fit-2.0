@@ -5,7 +5,7 @@ import {
     CLEAR_PARAMS,
     CLEAR_BUTTON_GRID_STYLES
 } from '../../actionTypes/index'
-import PreviewGifGrid from '../gifs/PreviewGifGrid'
+import PreviewGifGrid from '../workout/PreviewGifGrid'
 
 function DisplaySelections(props) {
 
