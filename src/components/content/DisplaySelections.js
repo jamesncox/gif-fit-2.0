@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { Link as RouterLink } from 'react-router-dom';
 import { 
     CLEAR_PARAMS,
     CLEAR_BUTTON_GRID_STYLES
@@ -31,7 +32,7 @@ function DisplaySelections(props) {
             <p className="display-selection-title">
                 Your Workout
                 {props.numberOfExercises || props.exerciseTime || props.restTime || props.numberOfRounds ? <button className="workout-btn" onClick={handleClearParams}>CLEAR</button> : null}
-                {props.numberOfExercises && props.exerciseTime && props.restTime && props.numberOfRounds ? <button className="workout-btn">GO !</button> : null}
+                {props.numberOfExercises && props.exerciseTime && props.restTime && props.numberOfRounds ? <RouterLink to="/workout"><button className="workout-btn">GO !</button></RouterLink> : null}
             </p>
             {props.numberOfExercises ? <p className="display-selection-category" style={{marginTop: "-.25rem"}}>EXERCISES</p> : null}
             <PreviewGifGrid />
